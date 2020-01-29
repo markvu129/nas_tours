@@ -1,0 +1,298 @@
+.travel-div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.welcome-area {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transition: opacity 0.7s 0.1s;
+}
+
+.welcome-area p {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.p-index-button_block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  z-index: 1000;
+}
+
+.p-index-button_block .p-index-button {
+  display: block;
+  flex-basis: 30%;
+  height: 50px;
+  border: 3px solid #fbc91b;
+  background: #fbc91b;
+  color: #000;
+  font-weight: 600;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.ui-button {
+  height: 56px;
+  width: 100%;
+  margin: 15px;
+  background: #fbc91b;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.p-index-car {
+  position: absolute;
+  top: 295px;
+  left: -650px;
+  -webkit-transition: 1.7s;
+  transition: 1.7s;
+  z-index: 0;
+}
+
+.p-index-car.car-move-right {
+  transform: translate(3000px, 0);
+  -webkit-transform: translate(3000px, 0); /** Chrome & Safari **/
+  -o-transform: translate(3000px, 0); /** Opera **/
+  -moz-transform: translate(3000px, 0);
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out; /** Firefox **/
+  -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+.travel-div.fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+
+.l-default-slogan {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+}
+
+.l-default-logo {
+  margin: 0 auto;
+  display: block;
+  padding: 60px 0px 0px 0px;
+}
+
+.ui-button-transparent a {
+  color: black;
+}
+
+.ui-button-transparent a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.l-default-divider {
+  width: 355px;
+  margin: 0 auto;
+  background-color: #fff !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Title */
+.homepage-title-view-left {
+  text-align: left;
+}
+
+.homepage-title-view-right {
+  text-align: right;
+}
+
+.homepage-title-big {
+  color: white;
+  font-weight: 800;
+}
+
+/* Smaller screen */
+@media only screen and (min-width: 737px) and (max-width: 1199px) {
+  .homepage-title-big {
+    font-size: 6em !important;
+  }
+
+  .homepage-title-view-right {
+    padding-right: 150px;
+  }
+
+  .homepage-title-view-left {
+    padding-left: 0px;
+  }
+}
+
+/* Large screen */
+@media only screen and (min-width: 1200px) and (max-width: 2400px) {
+  .homepage-title-view-left {
+    padding-left: 250px;
+    font-size: 2.5em !important;
+    font-weight: lighter !important;
+  }
+
+  .homepage-title-view-right {
+    padding-right: 300px;
+    font-size: 2.5em !important;
+    font-weight: lighter !important;
+  }
+
+  .homepage-title-big {
+    font-size: 7em !important;
+  }
+
+  .p-index-button-no-right {
+    margin-right: 0px !important;
+  }
+
+  .p-index-button-no-left {
+    margin-left: 20px !important;
+  }
+}
+
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .homepage-title-container {
+    margin-top: 40px;
+  }
+
+  .homepage-excited-block {
+    margin-bottom: 40px;
+  }
+
+  .homepage-title-big {
+    font-size: 3.5em !important;
+  }
+}
+
+/* Iphone 6/7/8 */
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  .welcome-area {
+    height: 750px !important;
+  }
+
+  .l-default-divider {
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .p-index-button_block .p-index-button {
+    flex-basis: 60%;
+    font-size: 0.9em !important;
+    height: 50px !important;
+  }
+
+  .homepage-title-big {
+    font-size: 3em !important;
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+  }
+
+  .p-index-car {
+    width: 300px;
+    position: absolute;
+    top: 550px;
+    left: -200px;
+  }
+
+  .l-default-logo {
+    width: 250px;
+  }
+
+  .l-default-slogan {
+    font-size: 14px;
+  }
+
+  .homepage-title-view-left {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 2.3em !important;
+  }
+
+  .homepage-title-view-right {
+    font-size: 2.3em !important;
+    text-align: left;
+    display: inline-block;
+    padding-top: 5px;
+  }
+
+  .homepage-excited-block {
+    margin-bottom: 40px;
+  }
+
+  .p-index-button-no-right {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Iphone plus */
+@media only screen and (min-device-width: 411px) and (max-device-width: 736px) {
+  .homepage-title-view-right {
+    margin-left: -40px !important;
+  }
+
+  .homepage-title-big {
+    margin-left: 30px !important;
+  }
+}
+
+.welcome-area {
+  background-image: url("/assets/img/images/background_desktop.jpg");
+  background-size: cover;
+  height: 900px;
+  background-repeat: no-repeat;
+}
+
+/* Large screen */
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+  .welcome-area {
+    background-image: url("/assets/img/images/background_desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Iphone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .welcome-area {
+    background-image: url("/assets/img/images/background_iphone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .welcome-area {
+    background-image: url("/assets/img/images/background_iphone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,195 @@
+/* Navbar */
+.navbar {
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #0089e9;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.logo-navbar {
+  height: 30px;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li {
+  margin: 0px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.mobile-nav {
+  display: block !important;
+}
+
+.l-tour-logo {
+  margin: 0 auto;
+  display: block;
+  padding: 0px 0px 0px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* Check availibility button */
+.bokunButton {
+  background: #fbc91b;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 10px;
+  display: inline-block;
+  float: right;
+}
+
+/* Iphone 6/7/8 */
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  .logo {
+    width: 100px;
+  }
+
+  .bokunButton {
+    font-size: 12px !important;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  .main-nav {
+    background: #0089e9;
+    margin-top: 0px;
+    width: 101%;
+    position: absolute;
+    top: 0;
+    margin-left: -1px;
+  }
+
+  .navbar {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .main-nav li {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .main-nav li a {
+    margin-right: 10px;
+  }
+
+  .mobile-nav li a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .l-tour-logo {
+    width: 120px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .logo-navbar {
+    height: 40px;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+  }
+
+  .close:hover {
+    opacity: 1.2;
+  }
+
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 33px;
+    width: 2px;
+    background-color: white;
+    color: white;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+}
+
+/* Iphone plus */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  .main-nav li a {
+    margin-right: 20px;
+  }
+}
