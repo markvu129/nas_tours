@@ -66,7 +66,6 @@ class Home extends Component {
             <div className="p-index-button_block">
               <button
                 className="ui-button ui-button-transparent p-index-button"
-                onClick={() => this.handleClick("tours/religion")}
               >
                 <a>Religion</a>
               </button>
@@ -74,15 +73,13 @@ class Home extends Component {
             <div className="p-index-button_block">
               <button
                 className="ui-button ui-button-transparent p-index-button p-index-button-no-right"
-                onClick={() => this.handleClick("tours/politics")}
               >
-                <a href="/tours/politics">Politics</a>
+                <a href="/">Politics</a>
               </button>
               <button
                 className="ui-button ui-button-transparent p-index-button p-index-button-no-left"
-                onClick={() => this.handleClick("tours/food")}
               >
-                <a href="/tours/food">Food</a>
+                <a href="/">Food</a>
               </button>
             </div>
           </div>
