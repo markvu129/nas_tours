@@ -22,7 +22,7 @@ class Footer extends Component {
                         className="c-footer-logo"
                         data-v-cedeba38=""/> <span
                         className="c-footer-slogan"
-                        data-v-cedeba38="">The best offline experience in the world</span></div>
+                        data-v-cedeba38="">We Spark Conversations</span></div>
                     <section className="c-footer-info" data-v-cedeba38="">
                         <div className="c-footer-info-block" data-v-cedeba38=""><h4 data-v-cedeba38="">About us</h4>
                             <p data-v-cedeba38="">Edutainment Tours - Bringing you around a country in the most fun,

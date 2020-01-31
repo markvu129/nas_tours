@@ -34,7 +34,7 @@ class UnderConstruction extends Component {
             className="l-default-logo"
           />
           <span className="l-default-slogan">
-            The best offline experience in the world
+            We Spark Conversations
           </span>
           <hr className="l-default-divider" />
         </header>
