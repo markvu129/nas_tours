@@ -38,7 +38,7 @@ class TourReligion extends Component {
                         <ul className="p-tour-description-list">
                             <li className="p-tour-description-l">
                                 <div className="p-tour-description-div">
-                                    <img src="https://i.ibb.co/fG5s93n/image-0.png"/>
+                                    <img className="tour-description-icon" src="/assets/img/images/nas_tours_schedule.svg"/>
                                     <h3 className="p-tour-description-title">SCHEDULE</h3>
                                     <hr className="p-tour-description-divider"/>
                                     <p className="p-tour-description-p">MON TO SAT</p>
@@ -49,7 +49,7 @@ class TourReligion extends Component {
                             </li>
                             <li className="p-tour-description-l">
                                 <div className="p-tour-description-div">
-                                    <img src="https://i.ibb.co/fG5s93n/image-0.png"/>
+                                    <img className="tour-description-icon" src="/assets/img/images/nas_tours_clock.svg"/>
                                     <h3 className="p-tour-description-title">DURATION</h3>
                                     <hr className="p-tour-description-divider"/>
                                     <p className="p-tour-description-p">2.0 HOURS</p>
@@ -60,7 +60,7 @@ class TourReligion extends Component {
                             </li>
                             <li className="p-tour-description-l">
                                 <div className="p-tour-description-div">
-                                    <img src="https://i.ibb.co/fG5s93n/image-0.png"/>
+                                    <img className="tour-description-icon" src="/assets/img/images/nas_tours_ticket.svg"/>
                                     <h3 className="p-tour-description-title">TICKETING</h3>
                                     <hr className="p-tour-description-divider"/>
                                     <p className="p-tour-description-p">
