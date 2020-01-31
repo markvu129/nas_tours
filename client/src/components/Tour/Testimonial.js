@@ -15,15 +15,15 @@ class Testimonial extends Component {
           <div className="testimonial-div">
             <img
               className="testimonial-img"
-              src="https://i.ibb.co/fG5s93n/image-0.png"
+              src="/assets/img/images/tat_yam.png"
               alt="nas"
               border="0"
             />
-            <h3 className="testimonial-title">Byron</h3>
+            <h3 className="testimonial-title">Tat Yam</h3>
             <p className="testimonial-tag">
               On this tour, we will show you how this{" "}
               <span className="testimonial-highlight">country</span> made all
-              races and religions live in peace together. We will visit ethnic``
+              races and religions live in peace together. We will visit ethnic
               quarters and connect with people of{" "}
               <span className="testimonial-highlight">different</span> races and
               faiths and it’s what makes Singapore unique and unforgettable.
@@ -40,8 +40,8 @@ class Testimonial extends Component {
               data-v-032cbaaa=""
             >
               <img
-                src="https://i.ibb.co/fG5s93n/image-0.png"
-                alt="main.perks_block.quote_1"
+                src="https://svgshare.com/i/HA0.svg"
+                alt="tripadvisor review"
                 className="c-text_bubble-image"
                 data-v-6275ac14=""
               />
@@ -87,8 +87,8 @@ class Testimonial extends Component {
               data-v-032cbaaa=""
             >
               <img
-                src="https://i.ibb.co/fG5s93n/image-0.png"
-                alt="main.perks_block.quote_2"
+                src="https://svgshare.com/i/HA0.svg"
+                alt="tripadvisor review"
                 className="c-text_bubble-image"
                 data-v-6275ac14=""
               />
@@ -136,8 +136,8 @@ class Testimonial extends Component {
               data-v-032cbaaa=""
             >
               <img
-                src="https://i.ibb.co/fG5s93n/image-0.png"
-                alt="main.perks_block.quote_3"
+                src="https://svgshare.com/i/HA0.svg"
+                alt="tripadvisor review"
                 className="c-text_bubble-image"
                 data-v-6275ac14=""
               />
