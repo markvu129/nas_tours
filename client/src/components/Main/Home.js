@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import "../Tour/css/TourReligion.css";
 import "./css/Home.css";
-import "../Common/css/Navbar.css";
 
 class Home extends Component {
   constructor(props, context) {
@@ -47,12 +45,10 @@ class Home extends Component {
             border="0"
             className="l-default-logo"
           />
-          <span className="l-default-slogan">
-            We Spark Conversations
-          </span>
+          <span className="l-default-slogan">We Spark Conversations</span>
           <hr className="l-default-divider" />
         </header>
-        <div className="container homepage-title-container">
+        <div className="homepage-title-container">
           <div
             className={
               this.state.go_to_tour ? "travel-div fade-out" : "travel-div"

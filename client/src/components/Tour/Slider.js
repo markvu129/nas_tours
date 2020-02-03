@@ -30,7 +30,7 @@ class ImageSlider extends Component {
       }
     ];
     return (
-      <Slider className="slider-wrapper" infinite={true} autoplay={2000}>
+      <Slider className="slider-wrapper" infinite={true} autoplay={false}>
         {content.map((item, index) => (
           <div
             key={index}

@@ -43,7 +43,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
-#bokun_13a6992a_3165_40e7_96f8_5a4cefedde91[data-v-8e61bc0a] {
+#bokun_13a6992a_3165_40e7_96f8_5a4cefedde91 {
   width: 250px;
   padding: 15px 20px;
   background: #fbc91b;
@@ -75,7 +75,7 @@ iframe {
   height: 100vh;
 }
 
-.p-tour-jumbotrone[data-v-4dcd448f] {
+.p-tour-jumbotrone {
   background: #fff;
   width: 100%;
   margin-top: 0px;
@@ -91,19 +91,11 @@ iframe {
   margin-bottom: 80px;
 }
 
-.p-tour-jumbotrone img[data-v-4dcd448f] {
+.p-tour-jumbotrone img {
   height: 445px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.p-tour-jumbotrone h1[data-v-4dcd448f] {
-  margin-top: 35px;
-  color: #0089e9;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 50px;
 }
 
 .p-tour-description {
@@ -117,20 +109,25 @@ iframe {
   margin-bottom: 40px;
 }
 
+.tour-description {
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
 .tour-description-icon {
   width: 100px;
-  height: 100px
+  height: 100px;
 }
 
 .p-tour-description h1 {
   margin-top: 35px;
   color: #0089e9;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 50px;
+  line-height: 1.5;
 }
 
-.p-tour-title[data-v-4dcd448f] {
+.p-tour-title {
   width: 240px;
   height: 60px;
   margin: 45px auto 0;
@@ -147,7 +144,7 @@ iframe {
   font-size: 22px;
 }
 
-.p-tour-bonuses[data-v-4dcd448f] {
+.p-tour-bonuses {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -156,19 +153,19 @@ iframe {
   margin: 65px auto 0;
 }
 
-.p-tour-bonuses-block[data-v-4dcd448f] {
+.p-tour-bonuses-block {
   flex-basis: 20%;
   text-align: center;
 }
 
-.p-tour-video_description[data-v-4dcd448f] {
+.p-tour-video_description {
   height: 500px;
   padding-top: 25px;
   position: relative;
   background: #0089e9;
 }
 
-.p-tour-video_block[data-v-1674a463] {
+.p-tour-video_block {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -177,34 +174,34 @@ iframe {
   height: 430px;
 }
 
-.p-tour-video_block-iframe_wrap[data-v-1674a463] {
-  height: 100%;
+.p-tour-video_block-iframe_wrap {
+  height: 377px;
   overflow: hidden;
   border-radius: 30px;
   border: 3px solid #fff;
 }
 
-.p-tour-video_block iframe[data-v-1674a463] {
+.p-tour-video_block iframe {
   width: 100%;
   height: 100%;
 }
 
-.p-tour-video_block-car[data-v-1674a463] {
+.p-tour-video_block-car {
   position: absolute;
-  bottom: -280px;
+  bottom: -260px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 800px;
 }
 
-.p-tour-timeline-block[data-v-4dcd448f] {
+.p-tour-timeline-block {
   background: #fff;
   overflow: hidden;
   padding-top: 200px;
 }
 
-.p-tour-title[data-v-4dcd448f] {
+.p-tour-title {
   width: 240px;
   height: 60px;
   margin: 45px auto 0;
@@ -259,7 +256,7 @@ iframe {
 .p-tour-description-p {
   font-weight: bold;
   font-size: 1em;
-  color: #0089e9;
+  color: #6b6d72;
   margin-bottom: 0px;
 }
 
@@ -270,7 +267,7 @@ iframe {
   margin-top: 0px;
 }
 
-.p-tour-timeline[data-v-4dcd448f] {
+.p-tour-timeline {
   margin: 0 auto;
   max-width: 1000px;
   height: 200px;
@@ -284,30 +281,25 @@ iframe {
   margin-bottom: 40px;
 }
 
-.p-tour-timeline-wrap[data-v-4dcd448f] {
+.p-tour-timeline-wrap {
   position: relative;
 }
 
-.p-tour-timeline-image[data-v-4dcd448f] {
+.p-tour-timeline-image {
   display: block;
   height: 55px;
 }
 
-.p-tour-timeline-line[data-v-4dcd448f] {
+.p-tour-timeline-line {
   height: 0;
   border: 2px solid #0089e9;
   position: absolute;
-  top: 28px;
   left: 70px;
-  width: 750px;
+  width: 800px;
 }
 
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(2n) {
-  margin-top: -113px;
-}
-
-.p-tour-timeline-text[data-v-4dcd448f] {
-  width: 140px;
+.p-tour-timeline-text {
+  width: 250px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -321,143 +313,110 @@ iframe {
   position: relative;
 }
 
-.p-tour-timeline-text:nth-child(2n) p[data-v-4dcd448f] {
+.p-tour-timeline-text:nth-child(2n) p {
   -webkit-box-align: end;
   align-items: flex-end;
 }
 
-.p-tour-timeline-text p[data-v-4dcd448f] {
+.p-tour-timeline-text p {
+  font-weight: 600;
+  height: 72px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-tour-timeline-text p {
   font-weight: 600;
 }
 
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text:nth-child(odd) p[data-v-4dcd448f] {
-  -webkit-box-align: start;
-  align-items: flex-start;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  font-weight: 600;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(2n) {
-  margin-top: -113px;
-}
-
-.p-tour-timeline-text:nth-child(2n) p[data-v-4dcd448f] {
+.p-tour-timeline-text:nth-child(2n) p {
   -webkit-box-align: end;
   align-items: flex-end;
+  padding-top: 200px;
 }
 
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  font-weight: 600;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(odd) {
-  margin-bottom: -121px;
-}
-
-.p-tour-timeline-text:nth-child(odd) p[data-v-4dcd448f] {
+.p-tour-timeline-text:nth-child(odd) p {
   -webkit-box-align: start;
   align-items: flex-start;
+  padding-top: 157px;
 }
 
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  font-weight: 600;
+.p-tour-timeline-text:nth-child(2n):after {
+  top: 26%;
 }
 
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
+.p-tour-timeline-text:nth-child(odd):after {
+  top: 20%;
 }
 
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(2n) {
-  margin-top: -113px;
-}
-
-.p-tour-timeline-text:nth-child(2n) p[data-v-4dcd448f] {
-  -webkit-box-align: end;
-  align-items: flex-end;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  font-weight: 600;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(odd) {
-  margin-bottom: -121px;
-}
-
-.p-tour-timeline-text:nth-child(odd) p[data-v-4dcd448f] {
-  -webkit-box-align: start;
-  align-items: flex-start;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  font-weight: 600;
-}
-
-.p-tour-timeline-text p[data-v-4dcd448f] {
-  height: 72px;
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(odd):before {
+.p-tour-timeline-text:nth-child(1):after {
   content: "";
   position: absolute;
-  top: -15px;
-  left: 50%;
-  width: 15px;
-  height: 15px;
+  top: 50%;
+  width: 110px;
+  height: 110px;
   border-radius: 100%;
-  background: #fbc91b;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
 }
 
-.p-tour-timeline-text[data-v-4dcd448f]:nth-child(2n):after {
+.p-tour-timeline-text:nth-child(2):after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 110px;
+  height: 110px;
   border-radius: 100%;
-  background: #fbc91b;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+}
+
+.p-tour-timeline-text:nth-child(3):after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+}
+
+.p-tour-timeline-text:nth-child(4):after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+}
+
+.p-tour-timeline-text:nth-child(5):after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+}
+
+.p-tour-timeline-text:nth-child(6):after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+}
+
+.p-tour-timeline-text:nth-child(7):after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
 }
 
 .tour-checkout-wrap {
   width: 100%;
-  height: 100%;
+  height: 700px;
+  background: url("https://i.ibb.co/dfPmKtY/background-singapore.png") no-repeat;
 }
 
 .tour-religion {
@@ -471,47 +430,52 @@ iframe {
   min-height: 1000px;
   text-align: center;
 }
+
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
-  .p-tour-timeline-block[data-v-4dcd448f] {
+  .p-tour-timeline-block {
     overflow: initial;
     padding: 200px 0px 0px 5px;
   }
 
-  .p-tour-timeline[data-v-4dcd448f] {
+  .p-tour-video_block-iframe_wrap {
+    height: 250px !important;
+  }
+
+  .p-tour-timeline {
     justify-content: left;
   }
 
-  .p-tour-timeline-text[data-v-4dcd448f] {
+  .p-tour-timeline-text {
     width: 50px;
     font-size: 12px;
   }
 
-  .p-tour-timeline-block[data-v-4dcd448f] {
+  .p-tour-timeline-block {
     overflow: initial;
   }
 
-  .p-tour-timeline[data-v-4dcd448f] {
+  .p-tour-timeline {
     justify-content: left;
     margin-top: 0px;
   }
 
-  .p-tour-video_block-car[data-v-1674a463] {
+  .p-tour-video_block-car {
     width: 370px;
   }
 
-  .p-tour-video_block-iframe_wrap[data-v-1674a463] {
+  .p-tour-video_block-iframe_wrap {
     width: 350px;
     height: 250px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .p-tour-video_block[data-v-1674a463] {
+  .p-tour-video_block {
     height: 150px;
   }
 
-  .p-tour-video_description[data-v-4dcd448f] {
+  .p-tour-video_description {
     height: 350px;
   }
 
@@ -561,7 +525,7 @@ iframe {
     margin-right: 5px;
   }
 
-  .p-tour-timeline-line[data-v-4dcd448f] {
+  .p-tour-timeline-line {
     width: 280px !important;
   }
 }
