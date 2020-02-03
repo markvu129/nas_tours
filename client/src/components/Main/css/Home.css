@@ -15,6 +15,36 @@ body {
   transition: opacity 0.7s 0.1s;
 }
 
+.home-video-section {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.home-video {
+  width: 400px;
+  height: 200px;
+  background: black;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-button {
+  border: 1px solid #0089e9;
+  border-radius: 20px;
+  color: #0089e9;
+  width: 150px;
+  padding: 5px 5px;
+  font-size: 1em;
+  margin-bottom: 80px;
+}
+
+.home-video-section a {
+  text-decoration: none;
+}
+
 .welcome-area p {
   color: #fff;
   font-size: 50px;
@@ -73,7 +103,7 @@ body {
 
 .p-index-car {
   position: absolute;
-  top: 295px;
+  top: 500px;
   left: -650px;
   -webkit-transition: 1.7s;
   transition: 1.7s;
@@ -281,7 +311,7 @@ body {
 .welcome-area {
   background-image: url("/assets/img/images/background_desktop.jpg");
   background-size: cover;
-  height: 900px;
+  height: 1000px;
   background-repeat: no-repeat;
 }
 

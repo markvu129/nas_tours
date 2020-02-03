@@ -54,6 +54,13 @@ class Home extends Component {
               this.state.go_to_tour ? "travel-div fade-out" : "travel-div"
             }
           >
+            <div className="home-video-section">
+              <div className="home-video"></div>
+              <a href="#home">
+                <button className="video-button">Skip video</button>
+              </a>
+            </div>
+
             <p className="homepage-title-view-left">What are you</p>
             <div className="homepage-excited-block">
               <h4 className="homepage-title-big">EXCITED</h4>
@@ -67,7 +74,7 @@ class Home extends Component {
                 Religion
               </button>
             </div>
-            <div className="p-index-button_block">
+            <div className="p-index-button_block" id="home">
               <button
                 className="ui-button ui-button-transparent p-index-button p-index-button-no-right"
                 onClick={() => this.handleClick("tours/politics")}
