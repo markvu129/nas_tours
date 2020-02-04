@@ -218,7 +218,7 @@ body[data-aos-duration="600"] [data-aos] {
   background: #0089e9;
   font-size: 1em;
   color: white;
-  min-height: 100%;
+  height: 100%;
   text-align: left;
   font-weight: bold;
   border-top-left-radius: 10px !important;
@@ -280,8 +280,8 @@ body[data-aos-duration="600"] [data-aos] {
   }
 
   .testimonial-div {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     min-height: 300px;
   }
 
@@ -296,8 +296,22 @@ body[data-aos-duration="600"] [data-aos] {
     font-size: 0.9em !important;
   }
 
+  .arrow-prev {
+    width: 10%;
+  }
+
+  .tour-guide-msg {
+    width: 45%;
+    font-size: 12px;
+    padding: 20px 10px 10px 20px;
+  }
+
+  .tour-guide-img {
+    width: 35%;
+  }
+
   .p-main-perks_block {
-    height: 1920px !important;
+    height: 650px !important;
   }
 
   .p-main-perks_block-quotes li:nth-child(1) {
@@ -312,7 +326,7 @@ body[data-aos-duration="600"] [data-aos] {
 /* Iphone plus */
 @media only screen and (min-device-width: 411px) and (max-device-width: 736px) {
   .p-main-perks_block {
-    height: 1620px !important;
+    height: 700px !important;
   }
 
   .p-main-perks_block-quotes li:nth-child(1) {

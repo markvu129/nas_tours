@@ -7,9 +7,11 @@ class Home extends Component {
     this.state = {
       visible: false,
       go_to_tour: false,
-      width: window.innerWidth
+      width: window.innerWidth,
+      skipVideo: false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.skipVideo = this.skipVideo.bind(this);
   }
 
   componentDidMount() {
@@ -30,6 +32,24 @@ class Home extends Component {
       setTimeout(() => this.props.history.push(route), 1500);
     } else {
       setTimeout(() => this.props.history.push(route), 900);
+    }
+  }
+
+  skipVideo(skipVideo) {
+    if (skipVideo === "skip") {
+      this.setState({
+        skipVideo: true
+      });
+      if (this.state.width < 600) {
+        window.scrollTo(0, 400);
+      } else {
+        window.scrollTo(0, 400);
+      }
+    } else {
+      this.setState({
+        skipVideo: false
+      });
+      window.scrollTo(0, 0);
     }
   }
 
@@ -54,12 +74,16 @@ class Home extends Component {
               this.state.go_to_tour ? "travel-div fade-out" : "travel-div"
             }
           >
-            <div className="home-video-section">
-              <div className="home-video"></div>
-              <a href="#home">
-                <button className="video-button">Skip video</button>
-              </a>
-            </div>
+            <div className="home-video"></div>
+            {!this.state.skipVideo || this.state.width > 600 ? (
+              <div className="home-video-section">
+                <a onClick={() => this.skipVideo("skip")}>
+                  <button className="video-button">Skip video</button>
+                </a>
+              </div>
+            ) : (
+              <div></div>
+            )}
 
             <p className="homepage-title-view-left">What are you</p>
             <div className="homepage-excited-block">
@@ -88,6 +112,15 @@ class Home extends Component {
                 Food
               </button>
             </div>
+            {this.state.skipVideo && this.state.width < 600 ? (
+              <div className="home-video-section">
+                <a onClick={() => this.skipVideo("goBack")}>
+                  <button className="video-button">Watch video</button>
+                </a>
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
           <img
             src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"

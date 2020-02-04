@@ -1,6 +1,14 @@
 body {
   line-height: initial !important;
 }
+
+.welcome-area {
+  background-image: url("/assets/img/images/background_desktop.jpg");
+  background-size: cover;
+  height: 1300px;
+  background-repeat: no-repeat;
+}
+
 .travel-div {
   margin-top: 20px;
   text-align: center;
@@ -22,8 +30,8 @@ body {
 }
 
 .home-video {
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   background: black;
   border: 1px solid transparent;
   margin: 0 auto;
@@ -103,7 +111,7 @@ body {
 
 .p-index-car {
   position: absolute;
-  top: 500px;
+  top: 700px;
   left: -650px;
   -webkit-transition: 1.7s;
   transition: 1.7s;
@@ -194,6 +202,9 @@ body {
 
 /* Large screen */
 @media only screen and (min-width: 1200px) and (max-width: 2400px) {
+  .welcome-area {
+    height: 1500px !important;
+  }
   .homepage-title-view-left {
     padding-left: 250px;
     font-size: 2.5em !important;
@@ -219,30 +230,20 @@ body {
   }
 }
 
-/* Iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .homepage-title-container {
-    margin-top: 40px;
-  }
-
-  .homepage-excited-block {
-    margin-bottom: 40px;
-  }
-
-  .homepage-title-big {
-    font-size: 3.5em !important;
-  }
-}
-
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   .welcome-area {
-    height: 750px !important;
+    height: 1100px !important;
   }
 
   .l-default-divider {
     margin-top: 20px;
     width: 200px;
+  }
+
+  .home-video {
+    width: 100%;
+    height: 250px;
   }
 
   .p-index-button_block .p-index-button {
@@ -261,7 +262,7 @@ body {
   .p-index-car {
     width: 300px;
     position: absolute;
-    top: 550px;
+    top: 1000px;
     left: -200px;
   }
 
@@ -297,7 +298,11 @@ body {
 }
 
 /* Iphone plus */
-@media only screen and (min-device-width: 411px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 414px) and (min-height: 736px) {
+  .welcome-area {
+    height: 1100px !important;
+  }
+
   .homepage-title-view-right {
     margin-left: -20px !important;
     padding-top: 13px !important;
@@ -306,13 +311,10 @@ body {
   .homepage-title-big {
     margin-left: 30px !important;
   }
-}
 
-.welcome-area {
-  background-image: url("/assets/img/images/background_desktop.jpg");
-  background-size: cover;
-  height: 1000px;
-  background-repeat: no-repeat;
+  .p-index-car {
+    top: 1100px;
+  }
 }
 
 /* Large screen */
@@ -339,5 +341,46 @@ body {
     background-image: url("/assets/img/images/background_iphone.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .welcome-area {
+    height: 1250px !important;
+  }
+
+  .homepage-title-container {
+    margin-top: 40px;
+  }
+
+  .homepage-excited-block {
+    margin-bottom: 40px;
+  }
+
+  .homepage-title-big {
+    font-size: 3em !important;
+  }
+}
+/* Google Pixel XL */
+@media only screen and (min-width: 411px) and (max-width: 767px) {
+  .welcome-area {
+    height: 1300px !important;
+  }
+  .homepage-title-view-right {
+    margin-left: -15px;
+  }
+  .homepage-title-big {
+    margin-left: 30px;
+  }
+}
+
+/* Large screen */
+@media only screen and (min-width: 1200px) and (max-width: 2400px) {
+  .welcome-area {
+    height: 1300px !important;
+  }
+  .p-index-car {
+    top: 750px;
   }
 }

@@ -27,11 +27,11 @@ class Testimonial extends Component {
 
     return (
       <div className="p-main-perks_block">
-        <h1>What your tour guide says...</h1>
+        <h1>What your edu-tainer says...</h1>
 
         <div className="testimonial-container">
           <div className="testimonial-div">
-            <Slider className="slider-wrapper" infinite={true} autoplay={2000}>
+            <Slider className="slider-wrapper" infinite={true}>
               {content.map((item, index) => (
                 <div className="tour-guide-div">
                   <div className="arrow-prev"></div>

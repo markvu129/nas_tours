@@ -71,7 +71,7 @@
   }
 
   .tour-checkout-wrap {
-    height: 850px;
+    height: 900px;
     background: url("/assets/img/images/background_iphone.jpg");
   }
 }
@@ -85,5 +85,9 @@
 
   .explore-more-l:first-child {
     margin-bottom: 40px;
+  }
+
+  .tour-checkout-wrap {
+    height: 850px !important;
   }
 }

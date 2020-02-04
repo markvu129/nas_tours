@@ -132,6 +132,7 @@
 
   .navbar {
     padding: 0px 0px 10px 0px;
+    height: 110px !important;
   }
 
   .main-nav li {
@@ -184,6 +185,13 @@
   }
   .close:after {
     transform: rotate(-45deg);
+  }
+  .bokunButton {
+    display: block;
+    float: initial;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
   }
 }
 

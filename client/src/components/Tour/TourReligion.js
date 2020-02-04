@@ -24,6 +24,10 @@ class TourReligion extends Component {
     clearTimeout(this.fadeIn);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   onPlayerReady(_id, player) {
     player.unmute();
   }
@@ -132,6 +136,7 @@ class TourReligion extends Component {
           </div>
 
           <div className="p-tour-timeline-block">
+            <h1>You will visit...</h1>
             <div className="p-tour-timeline">
               <div className="p-tour-timeline-wrap">
                 <div className="p-tour-timeline-line"></div>
@@ -155,6 +160,62 @@ class TourReligion extends Component {
                 <p>Diversity Gallery</p>
               </div>
             </div>
+            <ul className="p-tour-description-list p-tour-timeline-mobile">
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">LITTLE INDIA</p>
+                </div>
+              </li>
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">KAMPONG GLAM</p>
+                </div>
+              </li>
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">WATERLOO STREET</p>
+                </div>
+              </li>
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">CITY HALL</p>
+                </div>
+              </li>
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">CHINATOWN</p>
+                </div>
+              </li>
+              <li className="p-tour-description-l">
+                <div className="p-tour-description-div">
+                  <img
+                    className="tour-description-icon p-tour-timeline-icon-mobile"
+                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                  />
+                  <p className="p-tour-description-p">DIVERSITY GALLERY</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </ScrollAnimation>
         <ScrollAnimation
