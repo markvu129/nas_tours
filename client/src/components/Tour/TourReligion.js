@@ -167,7 +167,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">LITTLE INDIA</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    LITTLE INDIA
+                  </p>
                 </div>
               </li>
               <li className="p-tour-description-l">
@@ -176,7 +178,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">KAMPONG GLAM</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    KAMPONG GLAM
+                  </p>
                 </div>
               </li>
               <li className="p-tour-description-l">
@@ -185,7 +189,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">WATERLOO STREET</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    WATERLOO STREET
+                  </p>
                 </div>
               </li>
               <li className="p-tour-description-l">
@@ -194,7 +200,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">CITY HALL</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    CITY HALL
+                  </p>
                 </div>
               </li>
               <li className="p-tour-description-l">
@@ -203,7 +211,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">CHINATOWN</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    CHINATOWN
+                  </p>
                 </div>
               </li>
               <li className="p-tour-description-l">
@@ -212,7 +222,9 @@ class TourReligion extends Component {
                     className="tour-description-icon p-tour-timeline-icon-mobile"
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
-                  <p className="p-tour-description-p">DIVERSITY GALLERY</p>
+                  <p className="p-tour-description-p p-tour-destination-p-mobile">
+                    DIVERSITY GALLERY
+                  </p>
                 </div>
               </li>
             </ul>

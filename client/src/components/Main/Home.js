@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/Home.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Home extends Component {
   constructor(props, context) {
@@ -43,7 +44,7 @@ class Home extends Component {
       if (this.state.width < 600) {
         window.scrollTo(0, 400);
       } else {
-        window.scrollTo(0, 400);
+        window.scrollTo(0, 550);
       }
     } else {
       this.setState({
@@ -60,7 +61,7 @@ class Home extends Component {
       >
         <header className="header">
           <img
-            src="https://svgshare.com/i/HBs.svg"
+            src="/assets/img/images/logo-nastours.svg"
             alt="logo-nastours"
             border="0"
             className="l-default-logo"
@@ -74,64 +75,89 @@ class Home extends Component {
               this.state.go_to_tour ? "travel-div fade-out" : "travel-div"
             }
           >
-            <div className="home-video"></div>
-            {!this.state.skipVideo || this.state.width > 600 ? (
+            <ScrollAnimation
+              animateIn="fadeIn"
+              offSet={0}
+              delay={500}
+              initiallyVisible={false}
+            >
+              <div className="home-video"></div>
+            </ScrollAnimation>
+            {!this.state.skipVideo ? (
               <div className="home-video-section">
                 <a onClick={() => this.skipVideo("skip")}>
                   <button className="video-button">Skip video</button>
                 </a>
               </div>
             ) : (
-              <div></div>
-            )}
-
-            <p className="homepage-title-view-left">What are you</p>
-            <div className="homepage-excited-block">
-              <h4 className="homepage-title-big">EXCITED</h4>
-              <p className="homepage-title-view-right">about?</p>
-            </div>
-            <div className="p-index-button_block">
-              <button
-                className="ui-button ui-button-transparent p-index-button"
-                onClick={() => this.handleClick("tours/religion")}
-              >
-                Religion
-              </button>
-            </div>
-            <div className="p-index-button_block" id="home">
-              <button
-                className="ui-button ui-button-transparent p-index-button p-index-button-no-right"
-                onClick={() => this.handleClick("tours/politics")}
-              >
-                <a>Politics</a>
-              </button>
-              <button
-                className="ui-button ui-button-transparent p-index-button p-index-button-no-left"
-                onClick={() => this.handleClick("tours/food")}
-              >
-                Food
-              </button>
-            </div>
-            {this.state.skipVideo && this.state.width < 600 ? (
               <div className="home-video-section">
                 <a onClick={() => this.skipVideo("goBack")}>
                   <button className="video-button">Watch video</button>
                 </a>
               </div>
-            ) : (
-              <div></div>
             )}
+
+            <ScrollAnimation
+              animateIn="fadeIn"
+              offSet={-100}
+              delay={500}
+              initiallyVisible={false}
+            >
+              <p className="homepage-title-view-left">What are you</p>
+              <div className="homepage-excited-block">
+                <h4 className="homepage-title-big">EXCITED</h4>
+                <p className="homepage-title-view-right">about?</p>
+              </div>
+              <div className="p-index-button_block">
+                <button
+                  className="ui-button ui-button-transparent p-index-button"
+                  onClick={() => this.handleClick("tours/religion")}
+                >
+                  Religion
+                </button>
+              </div>
+              <div className="p-index-button_block" id="home">
+                <button
+                  className="ui-button ui-button-transparent p-index-button p-index-button-no-right"
+                  onClick={() => this.handleClick("tours/politics")}
+                >
+                  <a>Politics</a>
+                </button>
+                <button
+                  className="ui-button ui-button-transparent p-index-button p-index-button-no-left"
+                  onClick={() => this.handleClick("tours/food")}
+                >
+                  Food
+                </button>
+              </div>
+              {this.state.skipVideo && this.state.width < 600 ? (
+                <div className="home-video-section">
+                  <a onClick={() => this.skipVideo("goBack")}>
+                    <button className="video-button">Watch video</button>
+                  </a>
+                </div>
+              ) : (
+                <div></div>
+              )}
+            </ScrollAnimation>
           </div>
-          <img
-            src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
-            alt="car"
-            className={
-              this.state.go_to_tour
-                ? "p-index-car car-move-right"
-                : "p-index-car"
-            }
-            border="0"
-          />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            offSet={0}
+            delay={500}
+            initiallyVisible={false}
+          >
+            <img
+              src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
+              alt="car"
+              className={
+                this.state.go_to_tour
+                  ? "p-index-car car-move-right"
+                  : "p-index-car"
+              }
+              border="0"
+            />
+          </ScrollAnimation>
         </div>
       </div>
     );

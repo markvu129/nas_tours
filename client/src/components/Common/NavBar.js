@@ -28,7 +28,7 @@ class NavBar extends Component {
         <a href="/" className="logo">
           <img
             alt="Nastours. The best offline experience in the world"
-            src="https://svgshare.com/i/HBs.svg"
+            src="/assets/img/images/logo-nastours.svg"
             className="l-tour-logo logo-navbar"
           />
         </a>
