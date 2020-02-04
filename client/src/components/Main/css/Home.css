@@ -1,14 +1,6 @@
 body {
   line-height: initial !important;
 }
-
-.welcome-area {
-  background-image: url("/assets/img/images/background_desktop.jpg");
-  background-size: cover;
-  height: 1300px;
-  background-repeat: no-repeat;
-}
-
 .travel-div {
   margin-top: 20px;
   text-align: center;
@@ -23,90 +15,11 @@ body {
   transition: opacity 0.7s 0.1s;
 }
 
-.home-video-section {
-  margin: 0 auto;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.home-video {
-  width: 600px;
-  height: 300px;
-  border: 1px solid transparent;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.intro-video {
-  width: 600px;
-  height: 300px;
-  -o-object-fit: contain;
-  object-fit: contain;
-  z-index: 0;
-}
-
-.intro-video:hover + .video-control {
-  opacity: 0.8;
-}
-
-.video-control {
-  font-size: 4em;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: #fbc91b !important;
-  text-align: center;
-}
-
-.video-control:hover {
-  opacity: 1;
-}
-
-.video-control-first {
-  opacity: 1 !important;
-}
-
-.video-control:before,
-.video-control:after {
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  top: 48%;
-  left: 51%;
-  margin: -0.5em 0 0 -0.5em;
-}
-.video-control:before {
-  content: "\25BA";
-}
-.video-control:after {
-  content: "ll";
-  font-weight: 700;
-}
-.video-control.paused:after {
-  opacity: 0;
-}
-.video-control.playing:before {
-  opacity: 0;
-}
-
-.video-button {
-  border: 1px solid #0089e9;
-  border-radius: 20px;
-  color: #0089e9;
-  width: 150px;
-  padding: 5px 5px;
-  font-size: 1em;
-  margin-bottom: 80px;
-}
-
-.home-video-section a {
-  text-decoration: none;
-}
-
 .welcome-area p {
   color: #fff;
   font-size: 50px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .homepage-title-container {
@@ -160,7 +73,7 @@ body {
 
 .p-index-car {
   position: absolute;
-  top: 700px;
+  top: 295px;
   left: -650px;
   -webkit-transition: 1.7s;
   transition: 1.7s;
@@ -251,13 +164,11 @@ body {
 
 /* Large screen */
 @media only screen and (min-width: 1200px) and (max-width: 2400px) {
-  .welcome-area {
-    height: 1500px !important;
-  }
   .homepage-title-view-left {
     padding-left: 250px;
     font-size: 2.5em !important;
     font-weight: lighter !important;
+    margin-top: 80px !important;
   }
 
   .homepage-title-view-right {
@@ -279,33 +190,30 @@ body {
   }
 }
 
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .homepage-title-container {
+    margin-top: 40px;
+  }
+
+  .homepage-excited-block {
+    margin-bottom: 40px;
+  }
+
+  .homepage-title-big {
+    font-size: 3.5em !important;
+  }
+}
+
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   .welcome-area {
-    height: 1100px !important;
+    height: 750px !important;
   }
 
   .l-default-divider {
     margin-top: 20px;
     width: 200px;
-  }
-
-  .home-video {
-    width: 100%;
-    height: 250px;
-  }
-
-  .home-video-section {
-    margin-top: 80px !important;
-  }
-
-  .intro-video {
-    width: 100%;
-  }
-
-  .video-control:before,
-  .video-control:after {
-    top: 45%;
   }
 
   .p-index-button_block .p-index-button {
@@ -324,7 +232,7 @@ body {
   .p-index-car {
     width: 300px;
     position: absolute;
-    top: 1000px;
+    top: 550px;
     left: -200px;
   }
 
@@ -360,11 +268,7 @@ body {
 }
 
 /* Iphone plus */
-@media only screen and (min-device-width: 414px) and (min-height: 736px) {
-  .welcome-area {
-    height: 1100px !important;
-  }
-
+@media only screen and (min-device-width: 411px) and (max-device-width: 736px) {
   .homepage-title-view-right {
     margin-left: -20px !important;
     padding-top: 13px !important;
@@ -373,15 +277,13 @@ body {
   .homepage-title-big {
     margin-left: 30px !important;
   }
+}
 
-  .p-index-car {
-    top: 1100px;
-  }
-
-  .video-control:before,
-  .video-control:after {
-    top: 45% !important;
-  }
+.welcome-area {
+  background-image: url("/assets/img/images/background_desktop.jpg");
+  background-size: cover;
+  height: 900px;
+  background-repeat: no-repeat;
 }
 
 /* Large screen */
@@ -408,56 +310,5 @@ body {
     background-image: url("/assets/img/images/background_iphone.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-}
-
-/* Iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .welcome-area {
-    height: 1250px !important;
-  }
-
-  .homepage-title-container {
-    margin-top: 40px;
-  }
-
-  .homepage-excited-block {
-    margin-bottom: 40px;
-  }
-
-  .homepage-title-big {
-    font-size: 3em !important;
-  }
-
-  .video-control:before,
-  .video-control:after {
-    top: 40%;
-  }
-}
-/* Google Pixel XL */
-@media only screen and (min-width: 411px) and (max-width: 767px) {
-  .welcome-area {
-    height: 1300px !important;
-  }
-  .homepage-title-view-right {
-    margin-left: -15px;
-  }
-  .homepage-title-big {
-    margin-left: 30px;
-  }
-
-  .video-control:before,
-  .video-control:after {
-    top: 35%;
-  }
-}
-
-/* Large screen */
-@media only screen and (min-width: 1200px) and (max-width: 2400px) {
-  .welcome-area {
-    height: 1300px !important;
-  }
-  .p-index-car {
-    top: 750px;
   }
 }
