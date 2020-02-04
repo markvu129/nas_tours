@@ -20,7 +20,6 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 0);
     this.fadeIn = setTimeout(() => this.setState({ visible: true }), 100);
   }
 
@@ -48,9 +47,9 @@ class Home extends Component {
         firstVideoLoad: false
       });
       if (this.state.width < 600) {
-        window.scrollTo(0, 400);
+        window.scrollTo(0, 500);
       } else {
-        window.scrollTo(0, 600);
+        window.scrollTo(0, 700);
       }
       $("video#video1")[0].pause();
     } else {
@@ -93,7 +92,7 @@ class Home extends Component {
                 <div className="player-wrapper">
                   <video
                     id="video1"
-                    className="video"
+                    className="intro-video"
                     autoPlay="false"
                     loop="true"
                     playsinline="true"
@@ -163,15 +162,6 @@ class Home extends Component {
                   Food
                 </button>
               </div>
-              {this.state.skipVideo && this.state.width < 600 ? (
-                <div className="home-video-section">
-                  <a onClick={() => this.skipVideo("goBack")}>
-                    <button className="video-button">Watch video</button>
-                  </a>
-                </div>
-              ) : (
-                <div></div>
-              )}
             </ScrollAnimation>
           </div>
           <ScrollAnimation
