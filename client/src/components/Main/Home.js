@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./css/Home.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import $ from "jquery";
 
 class Home extends Component {
   constructor(props, context) {
@@ -9,13 +10,17 @@ class Home extends Component {
       visible: false,
       go_to_tour: false,
       width: window.innerWidth,
-      skipVideo: false
+      skipVideo: false,
+      videoUrl:
+        "https://res.cloudinary.com/markvu129/video/upload/v1580803822/nas_tours_intro_xfce4h.mov",
+      firstVideoLoad: true
     };
     this.handleClick = this.handleClick.bind(this);
     this.skipVideo = this.skipVideo.bind(this);
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.fadeIn = setTimeout(() => this.setState({ visible: true }), 100);
   }
 
@@ -39,18 +44,21 @@ class Home extends Component {
   skipVideo(skipVideo) {
     if (skipVideo === "skip") {
       this.setState({
-        skipVideo: true
+        skipVideo: true,
+        firstVideoLoad: false
       });
       if (this.state.width < 600) {
         window.scrollTo(0, 400);
       } else {
-        window.scrollTo(0, 550);
+        window.scrollTo(0, 600);
       }
+      $("video#video1")[0].pause();
     } else {
       this.setState({
         skipVideo: false
       });
       window.scrollTo(0, 0);
+      $("video#video1")[0].play();
     }
   }
 
@@ -81,7 +89,32 @@ class Home extends Component {
               delay={500}
               initiallyVisible={false}
             >
-              <div className="home-video"></div>
+              <div className="home-video">
+                <div className="player-wrapper">
+                  <video
+                    id="video1"
+                    className="video"
+                    autoPlay="false"
+                    loop="true"
+                    playsinline="true"
+                    poster=""
+                  >
+                    <source
+                      id="mp4"
+                      src={this.state.videoUrl}
+                      type="video/mp4"
+                    />
+                  </video>
+                  <a
+                    className={
+                      this.state.firstVideoLoad
+                        ? "video-control video-control-first js-video-control paused"
+                        : "video-control js-video-control paused"
+                    }
+                    data-video="video1"
+                  ></a>
+                </div>
+              </div>
             </ScrollAnimation>
             {!this.state.skipVideo ? (
               <div className="home-video-section">
