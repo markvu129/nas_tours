@@ -6,6 +6,7 @@ import ImageSlider from "./Slider";
 import ExploreMore from "./ExploreMore";
 import ScrollAnimation from "react-animate-on-scroll";
 import FacebookPlayer from "react-facebook-player";
+import { Helmet } from "react-helmet";
 
 class TourReligion extends Component {
   constructor(props) {
@@ -49,15 +50,17 @@ class TourReligion extends Component {
             initiallyVisible={false}
           >
             <div className="p-tour-description testimonial">
-              <h1>The race and religion TOUR</h1>
+              <h1>THE RACE AND RELIGION TOUR</h1>
               <p className="tour-description">
-                On this tour, we will show you how this{" "}
-                <span className="testimonial-highlight">country</span> made all
-                races and religions live in peace together. We will visit ethnic
-                quarters and connect with people of{" "}
+                This walking tour in Singapore will show you how locals of{" "}
                 <span className="testimonial-highlight">different</span> races
-                and faiths and it’s what makes Singapore unique and
-                unforgettable.
+                and religions coexist{" "}
+                <span className="testimonial-highlight">peacefully</span>. We
+                will visit ethnic quarters and interact with people of various
+                cultural groups. We hope this walking tour will{" "}
+                <span className="testimonial-highlight">spark</span>{" "}
+                conversations and allow you to immerse in a uniquely Singaporean
+                experience.
                 <br />
               </p>
               <ul className="p-tour-description-list">
@@ -157,7 +160,7 @@ class TourReligion extends Component {
                 <p>Chinatown</p>
               </div>
               <div className="p-tour-timeline-text">
-                <p>Diversity Gallery</p>
+                <p>Sikh Temple</p>
               </div>
             </div>
             <ul className="p-tour-description-list p-tour-timeline-mobile">
@@ -165,7 +168,7 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                    src="/assets/img/images/destination/little_india.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     LITTLE INDIA
@@ -176,7 +179,7 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                    src="/assets/img/images/destination/kampong.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     KAMPONG GLAM
@@ -187,7 +190,7 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                    src="/assets/img/images/destination/waterloo_street.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     WATERLOO STREET
@@ -198,7 +201,7 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                    src="/assets/img/images/destination/city_hall.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     CITY HALL
@@ -209,7 +212,7 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
+                    src="/assets/img/images/destination/chinatown.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     CHINATOWN
@@ -223,7 +226,7 @@ class TourReligion extends Component {
                     src="/assets/img/images/destination/tour_religion_1_small.jpg"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
-                    DIVERSITY GALLERY
+                    SIKH TEMPLE
                   </p>
                 </div>
               </li>
@@ -237,7 +240,26 @@ class TourReligion extends Component {
           delay={500}
           initiallyVisible={false}
         >
-          <Testimonial />
+          <div className="p-main-perks_block">
+            <h1>What your edu-tainer says...</h1>
+            <Testimonial />
+            <div
+              className="bokunButton"
+              disabled
+              id="bokun_676c790a_eeab_4d3a_8c70_15101027246c"
+              data-src="https://widgets.bokun.io/online-sales/a186cc43-6cac-4331-b827-83773d45435d/experience/249563?partialView=1"
+            >
+              Join this tour
+            </div>
+
+            <Helmet>
+              <script
+                type="text/javascript"
+                src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=a186cc43-6cac-4331-b827-83773d45435d"
+                sync
+              ></script>
+            </Helmet>
+          </div>
         </ScrollAnimation>
         <ScrollAnimation
           animateOnce

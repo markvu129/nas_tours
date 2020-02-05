@@ -371,7 +371,7 @@ iframe {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  background: url("/assets/img/images/destination/little_india.png");
 }
 
 .p-tour-timeline-text:nth-child(2):after {
@@ -380,7 +380,7 @@ iframe {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  background: url("/assets/img/images/destination/little_india.png");
 }
 
 .p-tour-timeline-text:nth-child(3):after {
@@ -389,7 +389,7 @@ iframe {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  background: url("/assets/img/images/destination/kampong.png");
 }
 
 .p-tour-timeline-text:nth-child(4):after {
@@ -398,7 +398,7 @@ iframe {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  background: url("/assets/img/images/destination/waterloo_street.png");
 }
 
 .p-tour-timeline-text:nth-child(5):after {
@@ -407,7 +407,7 @@ iframe {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  background: url("/assets/img/images/destination/city_hall.png");
 }
 
 .p-tour-timeline-text:nth-child(6):after {
@@ -415,8 +415,8 @@ iframe {
   position: absolute;
   width: 110px;
   height: 110px;
-  border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
+  city_hallborder-radius: 100%;
+  background: url("/assets/img/images/destination/chinatown.png");
 }
 
 .p-tour-timeline-text:nth-child(7):after {
@@ -429,9 +429,9 @@ iframe {
 }
 
 .tour-checkout-wrap {
-  width: 100%;
   height: 700px;
   background: url("https://i.ibb.co/dfPmKtY/background-singapore.png") no-repeat;
+  background-size: cover;
 }
 
 .tour-religion {

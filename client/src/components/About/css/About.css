@@ -2,3 +2,222 @@
   background: #0089e9;
   height: 300px;
 }
+
+.p-meet-tour-guide {
+  color: white !important;
+}
+
+.about-section {
+  margin-top: 100px;
+}
+
+.action-button {
+  background: #fbc91b;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 10px;
+}
+
+.about-cover-img {
+  width: 100%;
+  max-width: initial;
+  height: 600px;
+  background-image: url("/assets/img/images/tour_religion_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagline {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.tour-description-highlight {
+  color: #fbc91b;
+}
+
+.p-tour-perks {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  list-style: none;
+}
+
+.p-tour-perks-l {
+  flex-basis: 25%;
+}
+
+.p-tour-perks-title {
+  font-weight: 900;
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+.p-meet-tour-guide {
+  max-width: initial;
+  height: 1450px;
+  background-image: url("/assets/img/images/background_desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+}
+
+.meet-tour-guide-description {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.meet-tour-guide-title {
+  color: white !important;
+  padding-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+
+.p-meet-tour-guide .testimonial-div {
+  background: transparent;
+}
+
+.p-meet-tour-guide .arrow-prev {
+  background: transparent;
+}
+
+.p-meet-tour-guide .testimonial-div {
+  max-width: 800px;
+}
+
+.p-meet-tour-guide .tour-guide-msg {
+  color: black;
+  background: white;
+  font-size: 0.8em;
+  padding-top: 30px;
+}
+
+/* Contact form */
+.p-main-signup_block-form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.input-div {
+  width: 100%;
+}
+
+.input-div span {
+  display: inline-block;
+  float: left;
+  width: 10%;
+  margin-right: 40px;
+  padding-top: 20px;
+}
+
+.ui-input {
+  padding: 8px 15px;
+  margin: 15px 0;
+  width: 80%;
+  display: inline-block;
+  height: 40px;
+  background: white;
+  font-size: 0.8em;
+  color: black;
+  border-radius: 5px;
+  border: 1px transparent;
+}
+
+.ui-form {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.msg-input {
+  height: 200px;
+  border: 1px transparent;
+}
+
+.ui-button {
+  background-color: #fbc91b;
+  color: black;
+  margin-top: 40px;
+  margin-left: 80px;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 36px;
+  width: 200px;
+  font-weight: bold;
+}
+
+/* Iphone 6/7/8 */
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  .p-meet-tour-guide {
+    height: 1600px !important;
+  }
+
+  .p-tour-perks-l {
+    flex-basis: 50%;
+  }
+
+  .p-tour-perks-title {
+    font-size: 1.5em;
+  }
+
+  .p-tour-description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  .p-meet-tour-guide .tour-guide-img {
+    height: 100% !important;
+    width: 35%;
+  }
+
+  .p-meet-tour-guide .tour-guide-msg {
+    font-size: 0.6em;
+  }
+
+  .p-meet-tour-guide .testimonial-div {
+    padding: 0px 0px;
+  }
+
+  .p-main-signup_block-form {
+    width: 100%;
+  }
+
+  .input-div span {
+    display: none;
+  }
+
+  .ui-input {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .ui-button {
+    margin-left: 0px;
+  }
+}

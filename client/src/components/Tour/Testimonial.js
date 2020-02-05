@@ -26,43 +26,22 @@ class Testimonial extends Component {
     ];
 
     return (
-      <div className="p-main-perks_block">
-        <h1>What your edu-tainer says...</h1>
-
-        <div className="testimonial-container">
-          <div className="testimonial-div">
-            <Slider className="slider-wrapper" infinite={true}>
-              {content.map((item, index) => (
-                <div className="tour-guide-div">
-                  <div className="arrow-prev"></div>
-                  <div className="tour-guide-msg">
-                    {item.text} <br />
-                    <br />
-                    {item.author}
-                  </div>
-                  <img className="tour-guide-img" src={item.image} />
+      <div className="testimonial-container">
+        <div className="testimonial-div">
+          <Slider className="slider-wrapper" infinite={true}>
+            {content.map((item, index) => (
+              <div className="tour-guide-div">
+                <div className="arrow-prev"></div>
+                <div className="tour-guide-msg">
+                  {item.text} <br />
+                  <br />
+                  {item.author}
                 </div>
-              ))}
-            </Slider>
-          </div>
+                <img className="tour-guide-img" src={item.image} />
+              </div>
+            ))}
+          </Slider>
         </div>
-
-        <div
-          className="bokunButton"
-          disabled
-          id="bokun_676c790a_eeab_4d3a_8c70_15101027246c"
-          data-src="https://widgets.bokun.io/online-sales/a186cc43-6cac-4331-b827-83773d45435d/experience/249563?partialView=1"
-        >
-          Join this tour
-        </div>
-
-        <Helmet>
-          <script
-            type="text/javascript"
-            src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=a186cc43-6cac-4331-b827-83773d45435d"
-            sync
-          ></script>
-        </Helmet>
       </div>
     );
   }

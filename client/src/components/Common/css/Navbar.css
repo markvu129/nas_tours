@@ -25,6 +25,26 @@
   color: white;
 }
 
+.nav-links:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px #fbc91b solid;
+  cursor: pointer;
+}
+
+.nav-links-active:focus,
+:active,
+:visited {
+  color: white !important;
+}
+
+.nav-links-active {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px #fbc91b solid;
+}
+
 .main-nav li {
   margin: 0px auto;
 }
@@ -102,11 +122,9 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   padding: 10px 10px;
   display: inline-block;
-  float: right;
+  margin-left: 70px;
 }
 
 /* Iphone 6/7/8 */
@@ -119,6 +137,7 @@
     font-size: 12px !important;
     margin-right: 50px;
     margin-top: 10px;
+    margin-left: 0px;
   }
 
   .main-nav {
@@ -132,7 +151,18 @@
 
   .navbar {
     padding: 0px 0px 10px 0px;
-    height: 110px !important;
+    height: 110px;
+  }
+
+  .nav-links:hover {
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px #fbc91b solid;
+    cursor: pointer;
+  }
+
+  .navbar-about {
+    height: 60px !important;
   }
 
   .main-nav li {
@@ -141,11 +171,6 @@
 
   .main-nav li a {
     margin-right: 10px;
-  }
-
-  .mobile-nav li a:hover {
-    opacity: 0.5;
-    cursor: pointer;
   }
 
   .l-tour-logo {

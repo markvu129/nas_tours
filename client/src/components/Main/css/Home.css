@@ -44,6 +44,12 @@ body {
   z-index: 1000;
 }
 
+.p-index-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .p-index-button_block .p-index-button {
   display: block;
   flex-basis: 30%;
