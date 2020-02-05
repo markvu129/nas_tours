@@ -17,14 +17,11 @@ class Footer extends Component {
         <div className="c-footer-wrap" data-v-cedeba38="">
           <div className="c-footer-logo_block" data-v-cedeba38="">
             <img
-              src="https://svgshare.com/i/H8R.svg"
+              src="/assets/img/images/nas_tours_logo_footer.svg"
               alt="Nastours. The best offline experience in the world"
               className="c-footer-logo"
               data-v-cedeba38=""
             />{" "}
-            <span className="c-footer-slogan" data-v-cedeba38="">
-              We Spark Conversations
-            </span>
           </div>
           <section className="c-footer-info" data-v-cedeba38="">
             <div className="c-footer-info-block" data-v-cedeba38="">

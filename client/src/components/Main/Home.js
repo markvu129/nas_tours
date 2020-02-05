@@ -40,12 +40,11 @@ class Home extends Component {
       >
         <header className="header">
           <img
-            src="/assets/img/images/logo-nastours.svg"
+            src="/assets/img/images/nas_tours_new_logo.svg"
             alt="logo-nastours"
             border="0"
             className="l-default-logo"
           />
-          <span className="l-default-slogan">We Spark Conversations</span>
           <hr className="l-default-divider" />
         </header>
         <div className="container homepage-title-container">

@@ -120,6 +120,7 @@ body {
   margin: 0 auto;
   display: block;
   padding: 60px 0px 0px 0px;
+  width: 500px;
 }
 
 .ui-button-transparent a {
