@@ -465,18 +465,18 @@ iframe {
 .tour-video-image-control:before,
 .tour-video-image-control:after {
   position: absolute;
-  width: 1em;
-  height: 1em;
-  top: 48%;
+  width: 1.4em;
+  height: 1.4em;
+  top: 42%;
   left: 51%;
   margin: -0.5em 0 0 -0.5em;
 }
 .tour-video-image-control:before {
   content: "\25BA";
-}
-.tour-video-image-control:after {
-  content: "ll";
-  font-weight: 700;
+  border-radius: 100%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 5px #fbc91b solid;
 }
 .tour-video-image-control.paused:after {
   opacity: 0;
