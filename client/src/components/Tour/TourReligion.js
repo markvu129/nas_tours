@@ -5,16 +5,20 @@ import Testimonial from "./Testimonial";
 import ImageSlider from "./Slider";
 import ExploreMore from "./ExploreMore";
 import ScrollAnimation from "react-animate-on-scroll";
-import FacebookPlayer from "react-facebook-player";
 import { Helmet } from "react-helmet";
+import ReactModal from "react-modal";
 
 class TourReligion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false
+      visible: false,
+      modalIsOpen: false,
+      videoUrl:
+        "https://res.cloudinary.com/markvu129/video/upload/v1580803822/nas_tours_intro_xfce4h.mov"
     };
-    this.onPlayerReady = this.onPlayerReady.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   componentWillMount() {
@@ -29,11 +33,44 @@ class TourReligion extends Component {
     window.scrollTo(0, 0);
   }
 
-  onPlayerReady(_id, player) {
-    player.unmute();
+  openModal() {
+    this.setState({
+      modalIsOpen: true
+    });
+  }
+
+  closeModal() {
+    this.setState({
+      modalIsOpen: false
+    });
   }
 
   render() {
+    const modalStyles = {
+      overlay: {
+        zIndex: 99,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "rgba(25, 25, 25, 0.75)"
+      },
+      content: {
+        padding: 0,
+        maxWidth: "1000px",
+        maxHeight: "100%",
+        width: "100%",
+        margin: "0 auto",
+        borderRadius: "10px",
+        overflow: "hidden",
+        top: "auto",
+        bottom: "auto",
+        left: 0,
+        right: 0,
+        outline: "none",
+        textAlign: "center"
+      }
+    };
+
     return (
       <div
         className={
@@ -122,13 +159,9 @@ class TourReligion extends Component {
         >
           <div className="p-tour-video_description">
             <section className="p-tour-video_block">
-              <div className="p-tour-video_block-iframe_wrap">
-                <FacebookPlayer
-                  appId={880756785680649}
-                  videoId={486608898507368}
-                  id={`video-id-${486608898507368}`}
-                  onReady={this.onPlayerReady}
-                />
+              <div className="video-wrapper" onClick={this.openModal}>
+                <div className="p-tour-video_block-iframe_wrap"></div>
+                <a className="tour-video-image-control paused"></a>
               </div>
               <img
                 src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
@@ -137,6 +170,30 @@ class TourReligion extends Component {
               />
             </section>
           </div>
+
+          <ReactModal
+            isOpen={this.state.modalIsOpen}
+            contentLabel="Modal"
+            onRequestClose={this.closeModal}
+            style={modalStyles}
+            className="react-modal"
+          >
+            <video
+              id="video1"
+              className="intro-video"
+              autoPlay="true"
+              loop="true"
+              playsinline="true"
+              poster=""
+            >
+              <source id="mp4" src={this.state.videoUrl} type="video/mp4" s />
+            </video>
+            <a
+              className="video-control video-control-first js-video-control playing"
+              data-video="video1"
+            ></a>
+            <a className="close-video" onClick={this.closeModal}></a>
+          </ReactModal>
 
           <div className="p-tour-timeline-block">
             <h1>You will visit...</h1>

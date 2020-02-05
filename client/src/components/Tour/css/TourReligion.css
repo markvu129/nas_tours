@@ -173,6 +173,7 @@ iframe {
   transform: translateX(-50%);
   width: 680px;
   height: 430px;
+  margin-top: 40px;
 }
 
 .p-tour-video_block-iframe_wrap {
@@ -180,6 +181,15 @@ iframe {
   overflow: hidden;
   border-radius: 30px;
   border: 3px solid #fff;
+  background: url("/assets/img/images/religion_tour_cover.jpg") no-repeat;
+  background-size: cover;
+}
+
+.intro-video {
+  width: 800px;
+  height: 450px;
+  left: 50%;
+  border-radius: 5px;
 }
 
 .p-tour-video_block iframe {
@@ -297,7 +307,7 @@ iframe {
 
 .p-tour-timeline-block h1 {
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 70px;
   color: #0089e9;
   font-weight: bold;
   font-size: 50px;
@@ -446,6 +456,117 @@ iframe {
   text-align: center;
 }
 
+.tour-video-image-control {
+  font-size: 4em;
+  color: #fbc91b !important;
+  text-align: center;
+}
+
+.tour-video-image-control:before,
+.tour-video-image-control:after {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 48%;
+  left: 51%;
+  margin: -0.5em 0 0 -0.5em;
+}
+.tour-video-image-control:before {
+  content: "\25BA";
+}
+.tour-video-image-control:after {
+  content: "ll";
+  font-weight: 700;
+}
+.tour-video-image-control.paused:after {
+  opacity: 0;
+}
+.tour-video-image-control.playing:before {
+  opacity: 0;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.video-wrapper:hover + .tour-video-image-control {
+  transform: scale(1) !important;
+}
+
+.intro-video:hover + .video-control {
+  opacity: 0.8;
+}
+
+.video-control {
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fbc91b !important;
+  text-align: center;
+}
+
+.video-control:hover {
+  opacity: 1;
+}
+
+.video-control-first {
+  opacity: 1 !important;
+}
+
+.video-control:before,
+.video-control:after {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 48%;
+  left: 51%;
+  margin: -0.5em 0 0 -0.5em;
+}
+.video-control:before {
+  content: "\25BA";
+}
+.video-control:after {
+  content: "ll";
+  font-weight: 700;
+}
+.video-control.paused:after {
+  opacity: 0;
+}
+.video-control.playing:before {
+  opacity: 0;
+}
+
+.close-video {
+  position: absolute;
+  right: 250px !important;
+  top: 100px !important;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.close-video:hover {
+  opacity: 1.2;
+}
+
+.close-video:before,
+.close-video:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: white;
+  color: white;
+}
+.close-video:before {
+  transform: rotate(45deg);
+}
+.close-video:after {
+  transform: rotate(-45deg);
+}
+
 @media only screen and (min-width: 500px) and (max-width: 2400px) {
   .p-tour-timeline-mobile {
     display: none;
@@ -454,9 +575,26 @@ iframe {
 
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
+  .intro-video {
+    width: 100%;
+    height: 200px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px !important;
+  }
+
+  .close-video {
+    position: absolute;
+    right: 10px !important;
+    top: 150px !important;
+  }
+
   .p-tour-destination-p-mobile {
     font-size: 0.9em !important;
     margin-top: 20px;
+  }
+
+  .tour-video-image-control:before {
+    top: 70%;
   }
 
   .tour-description {
@@ -484,10 +622,6 @@ iframe {
 
   .p-tour-timeline-icon-mobile {
     border-radius: 100%;
-  }
-
-  .p-tour-video_block-iframe_wrap {
-    height: 250px !important;
   }
 
   .p-tour-timeline {
@@ -521,6 +655,9 @@ iframe {
     height: 250px;
     margin: 0 auto;
     text-align: center;
+    background: url("/assets/img/images/religion_tour_cover_mobile.jpg")
+      no-repeat;
+    background-size: cover;
   }
 
   .p-tour-video_block {

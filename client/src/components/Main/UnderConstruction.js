@@ -28,14 +28,12 @@ class UnderConstruction extends Component {
       >
         <header className="header">
           <img
-            src="https://svgshare.com/i/HBs.svg"
+            src="/assets/img/images/logo-nastours.svg"
             alt="logo-nastours"
             border="0"
             className="l-default-logo"
           />
-          <span className="l-default-slogan">
-            We Spark Conversations
-          </span>
+          <span className="l-default-slogan">We Spark Conversations</span>
           <hr className="l-default-divider" />
         </header>
 
@@ -54,6 +52,11 @@ class UnderConstruction extends Component {
                 <a href="https://www.facebook.com/thenastours/" target="_blank">
                   Sign up
                 </a>
+              </button>
+            </div>
+            <div className="p-index-button_block">
+              <button className="ui-button ui-button-transparent p-index-button under-construction-button">
+                <a href="/">Other tours</a>
               </button>
             </div>
           </div>

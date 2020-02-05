@@ -301,6 +301,15 @@ body {
   }
 }
 
+/* Very large screen */
+@media only screen and (min-width: 1799px) {
+  .welcome-area {
+    background-image: url("/assets/img/images/background_desktop.jpg");
+    background-size: cover;
+    height: 1200px;
+  }
+}
+
 /* Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .welcome-area {
