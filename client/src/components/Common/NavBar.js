@@ -69,18 +69,18 @@ class NavBar extends Component {
               Home
             </a>
           </li>
-          <li>
-            <a
-              href="/about"
-              className={
-                history.location.pathname === "/about"
-                  ? "nav-links nav-links-active"
-                  : "nav-links"
-              }
-            >
-              About
-            </a>
-          </li>
+          {/*<li>*/}
+          {/*  <a*/}
+          {/*    href="/about"*/}
+          {/*    className={*/}
+          {/*      history.location.pathname === "/about"*/}
+          {/*        ? "nav-links nav-links-active"*/}
+          {/*        : "nav-links"*/}
+          {/*    }*/}
+          {/*  >*/}
+          {/*    About*/}
+          {/*  </a>*/}
+          {/*</li>*/}
           <li>
             <a
               href="/tours/religion"
