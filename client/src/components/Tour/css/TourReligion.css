@@ -96,6 +96,10 @@ html {
   top: 400px;
 }
 
+.mouse:hover {
+  cursor: pointer;
+}
+
 .mouse .mouse-wheel {
   overflow: hidden;
   margin-top: 5px;

@@ -287,7 +287,7 @@ class TourReligion extends Component {
           initiallyVisible={false}
         >
           <div className="p-main-perks_block">
-            <h1>What your edu-tainer says...</h1>
+            <h1>What your edu-tainers say...</h1>
             <Testimonial />
           </div>
         </ScrollAnimation>

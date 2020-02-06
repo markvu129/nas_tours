@@ -25,12 +25,17 @@ $(document).on('click', '.js-video-control', function(e) {
 
 $(window).scroll(function() {
     var $height = $(window).scrollTop();
+    let video = document.getElementById('video1');
     if($height > 250) {
-        let video = document.getElementById('video1');
         video.pause();
         $('.js-video-control').removeClass('playing').addClass('paused')
     }
+    else {
+        video.play();
+        $('.js-video-control').removeClass('paused').addClass('playing')
+    }
 });
+
 
 $(document).ready(function() {
     $("#mute").click( function (){
