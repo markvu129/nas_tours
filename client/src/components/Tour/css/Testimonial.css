@@ -212,7 +212,7 @@ body[data-aos-duration="600"] [data-aos] {
 
 .tour-guide-msg {
   float: left;
-  width: 50%;
+  width: 59%;
   padding: 40px 40px;
   display: inline-block;
   background: #0089e9;
@@ -227,7 +227,7 @@ body[data-aos-duration="600"] [data-aos] {
 }
 
 .tour-guide-img {
-  width: 40%;
+  width: 31%;
   display: inline-block;
   height: 100%;
   float: left;
@@ -301,17 +301,18 @@ body[data-aos-duration="600"] [data-aos] {
   }
 
   .tour-guide-msg {
-    width: 45%;
-    font-size: 12px;
+    width: 80%;
+    font-size: 14px;
     padding: 20px 10px 10px 20px;
+    border-radius: 0px !important;
   }
 
   .tour-guide-img {
-    width: 35%;
+    width: 0%;
   }
 
   .p-main-perks_block {
-    height: 650px !important;
+    height: 550px !important;
   }
 
   .p-main-perks_block-quotes li:nth-child(1) {

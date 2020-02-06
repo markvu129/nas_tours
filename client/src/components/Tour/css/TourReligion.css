@@ -70,9 +70,109 @@ html {
   color: #fbc91b;
 }
 
-iframe {
-  width: 100%;
-  height: 100vh;
+/* Video controller */
+.mute-div {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+
+#mute {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-image: url("http://image.flaticon.com/icons/svg/10/10776.svg");
+}
+
+.mouse {
+  width: 28px;
+  height: 50px;
+  border: 5px solid #fbc91b;
+  margin: 0 auto;
+  border-radius: 30px;
+  position: absolute;
+  right: 40px;
+  top: 400px;
+}
+
+.mouse .mouse-wheel {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.mouse .mouse-wheel span {
+  display: block;
+  margin: 5px auto;
+  width: 5px;
+  height: 5px;
+}
+
+.mouse .mouse-wheel span.wheel {
+  border: 3px solid #fbc91b;
+  border-radius: 5px;
+  width: 0;
+}
+
+.mouse .mouse-wheel span.arrow {
+  border-bottom: 3px solid #fbc91b;
+  border-right: 3px solid #fbc91b;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: scrollDown;
+  animation: scrollDown;
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
 }
 
 .p-tour-jumbotrone {
@@ -181,14 +281,24 @@ iframe {
   overflow: hidden;
   border-radius: 30px;
   border: 3px solid #fff;
-  background: url("/assets/img/images/religion_tour_cover.jpg") no-repeat;
-  background-size: cover;
+}
+
+.p-tour-video_block-iframe_wrap .slider-wrapper .previousButton {
+  display: none !important;
+}
+
+.p-tour-video_block-iframe_wrap .slider-wrapper .nextButton {
+  display: none;
+}
+
+.tour-description-slider {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 .intro-video {
-  width: 800px;
-  height: 450px;
-  left: 50%;
+  width: 100%;
+  height: 90%;
   border-radius: 5px;
 }
 
@@ -378,9 +488,10 @@ iframe {
   content: "";
   position: absolute;
   top: 50%;
-  width: 110px;
+  width: 112px;
   height: 110px;
   border-radius: 100%;
+  border: 2px solid transparent;
   background: url("/assets/img/images/destination/little_india.png");
 }
 
@@ -391,6 +502,19 @@ iframe {
   height: 110px;
   border-radius: 100%;
   background: url("/assets/img/images/destination/little_india.png");
+  box-shadow: 0 0 0 3px #fff;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.p-tour-timeline-text:nth-child(2):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
 }
 
 .p-tour-timeline-text:nth-child(3):after {
@@ -402,6 +526,15 @@ iframe {
   background: url("/assets/img/images/destination/kampong.png");
 }
 
+.p-tour-timeline-text:nth-child(3):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
+}
+
 .p-tour-timeline-text:nth-child(4):after {
   content: "";
   position: absolute;
@@ -409,6 +542,15 @@ iframe {
   height: 110px;
   border-radius: 100%;
   background: url("/assets/img/images/destination/waterloo_street.png");
+}
+
+.p-tour-timeline-text:nth-child(4):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
 }
 
 .p-tour-timeline-text:nth-child(5):after {
@@ -420,13 +562,31 @@ iframe {
   background: url("/assets/img/images/destination/city_hall.png");
 }
 
+.p-tour-timeline-text:nth-child(5):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
+}
+
 .p-tour-timeline-text:nth-child(6):after {
   content: "";
   position: absolute;
   width: 110px;
   height: 110px;
-  city_hallborder-radius: 100%;
+  border-radius: 100%;
   background: url("/assets/img/images/destination/chinatown.png");
+}
+
+.p-tour-timeline-text:nth-child(6):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
 }
 
 .p-tour-timeline-text:nth-child(7):after {
@@ -438,6 +598,15 @@ iframe {
   background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
 }
 
+.p-tour-timeline-text:nth-child(7):hover:after {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
+}
+
 .tour-checkout-wrap {
   height: 700px;
   background: url("https://i.ibb.co/dfPmKtY/background-singapore.png") no-repeat;
@@ -447,7 +616,6 @@ iframe {
 .tour-religion {
   margin: 0px 0px;
   min-width: 100%;
-  opacity: 0;
 }
 
 /* Testimonial */
@@ -456,45 +624,7 @@ iframe {
   text-align: center;
 }
 
-.tour-video-image-control {
-  font-size: 4em;
-  color: #fbc91b !important;
-  text-align: center;
-}
-
-.tour-video-image-control:before,
-.tour-video-image-control:after {
-  position: absolute;
-  width: 1.4em;
-  height: 1.4em;
-  top: 42%;
-  left: 51%;
-  margin: -0.5em 0 0 -0.5em;
-}
-.tour-video-image-control:before {
-  content: "\25BA";
-  border-radius: 100%;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  border: 5px #fbc91b solid;
-}
-.tour-video-image-control.paused:after {
-  opacity: 0;
-}
-.tour-video-image-control.playing:before {
-  opacity: 0;
-}
-
-.video-wrapper:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
-
-.video-wrapper:hover + .tour-video-image-control {
-  transform: scale(1) !important;
-}
-
-.intro-video:hover + .video-control {
+.intro-video-wrapper:hover + .video-control {
   opacity: 0.8;
 }
 
@@ -502,25 +632,19 @@ iframe {
   font-size: 4em;
   opacity: 0;
   transition: opacity 0.3s;
-  color: #fbc91b !important;
+  color: #fbc91b;
   text-align: center;
 }
-
 .video-control:hover {
   opacity: 1;
 }
-
-.video-control-first {
-  opacity: 1 !important;
-}
-
 .video-control:before,
 .video-control:after {
   position: absolute;
   width: 1em;
   height: 1em;
-  top: 48%;
-  left: 51%;
+  top: 50%;
+  left: 50%;
   margin: -0.5em 0 0 -0.5em;
 }
 .video-control:before {
@@ -537,36 +661,6 @@ iframe {
   opacity: 0;
 }
 
-.close-video {
-  position: absolute;
-  right: 250px !important;
-  top: 100px !important;
-  width: 32px;
-  height: 32px;
-  opacity: 0.5;
-}
-
-.close-video:hover {
-  opacity: 1.2;
-}
-
-.close-video:before,
-.close-video:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 33px;
-  width: 2px;
-  background-color: white;
-  color: white;
-}
-.close-video:before {
-  transform: rotate(45deg);
-}
-.close-video:after {
-  transform: rotate(-45deg);
-}
-
 @media only screen and (min-width: 500px) and (max-width: 2400px) {
   .p-tour-timeline-mobile {
     display: none;
@@ -575,11 +669,22 @@ iframe {
 
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
+  .intro-video-wrapper {
+    margin-top: 80px;
+  }
+
   .intro-video {
     width: 100%;
-    height: 200px;
-    padding: 0px 10px 0px 10px;
+    height: 250px;
     border-radius: 5px !important;
+  }
+
+  .mouse {
+    display: none;
+  }
+
+  #mute {
+    top: 120px;
   }
 
   .close-video {
@@ -655,9 +760,10 @@ iframe {
     height: 250px;
     margin: 0 auto;
     text-align: center;
-    background: url("/assets/img/images/religion_tour_cover_mobile.jpg")
-      no-repeat;
-    background-size: cover;
+  }
+
+  .tour-description-slider {
+    background-size: cover !important;
   }
 
   .p-tour-video_block {

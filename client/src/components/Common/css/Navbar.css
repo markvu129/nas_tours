@@ -32,12 +32,6 @@
   cursor: pointer;
 }
 
-.nav-links-active:focus,
-:active,
-:visited {
-  color: white !important;
-}
-
 .nav-links-active {
   color: white;
   text-decoration: none;
@@ -124,7 +118,8 @@
   cursor: pointer;
   padding: 10px 10px;
   display: inline-block;
-  margin-left: 70px;
+  width: 200px;
+  text-align: center;
 }
 
 /* Iphone 6/7/8 */
@@ -147,6 +142,7 @@
     position: absolute;
     top: 0;
     margin-left: -1px;
+    height: 100px;
   }
 
   .navbar {

@@ -3,26 +3,16 @@ import "./css/TourReligion.css";
 import "./Testimonial";
 import Testimonial from "./Testimonial";
 import ImageSlider from "./Slider";
-import ExploreMore from "./ExploreMore";
 import ScrollAnimation from "react-animate-on-scroll";
-import { Helmet } from "react-helmet";
-import ReactModal from "react-modal";
+import Slider from "react-animated-slider";
 
 class TourReligion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false,
-      modalIsOpen: false,
       videoUrl:
         "https://res.cloudinary.com/markvu129/video/upload/v1580803822/nas_tours_intro_xfce4h.mov"
     };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  componentWillMount() {
-    this.fadeIn = setTimeout(() => this.setState({ visible: true }), 100);
   }
 
   componentWillUnmount() {
@@ -33,52 +23,62 @@ class TourReligion extends Component {
     window.scrollTo(0, 0);
   }
 
-  openModal() {
-    this.setState({
-      modalIsOpen: true
-    });
-  }
-
-  closeModal() {
-    this.setState({
-      modalIsOpen: false
-    });
+  skipVideo() {
+    window.scrollTo(0, 800);
   }
 
   render() {
-    const modalStyles = {
-      overlay: {
-        zIndex: 99,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "rgba(25, 25, 25, 0.75)"
+    const content = [
+      {
+        image: "/assets/img/images/religion_tour_cover.jpg"
       },
-      content: {
-        padding: 0,
-        maxWidth: "1000px",
-        maxHeight: "100%",
-        width: "100%",
-        margin: "0 auto",
-        borderRadius: "10px",
-        overflow: "hidden",
-        top: "auto",
-        bottom: "auto",
-        left: 0,
-        right: 0,
-        outline: "none",
-        textAlign: "center"
+      {
+        image: "/assets/img/images/tour_religion_2.jpg"
+      },
+      {
+        image: "/assets/img/images/religion_tour_cover.jpg"
+      },
+      {
+        image: "/assets/img/images/tour_religion_1.jpg"
+      },
+      {
+        image: "/assets/img/images/tour_religion_3.jpg"
+      },
+      {
+        image: "/assets/img/images/tour_religion_5.jpg"
       }
-    };
+    ];
 
     return (
-      <div
-        className={
-          this.state.visible ? "tour-religion fade-in" : "tour-religion"
-        }
-      >
+      <div className="tour-religion">
         <div data-v-4dcd448f="" className="tour-intro">
-          <ImageSlider />
+          <div className="intro-video-wrapper">
+            <video
+              id="video1"
+              className="intro-video"
+              autoPlay="true"
+              loop="true"
+              playsinline="true"
+              poster=""
+              muted={true}
+            >
+              <source id="mp4" src={this.state.videoUrl} type="video/mp4" />
+            </video>
+            <div className="mute-div">
+              <div id="mute" className="btn"></div>
+            </div>
+            <a
+              className="video-control video-control-first js-video-control playing"
+              data-video="video1"
+            ></a>
+            <div className="mouse" onClick={this.skipVideo}>
+              <div className="mouse-wheel">
+                <span className="wheel"></span>
+                <span className="arrow"></span>
+                <span className="arrow"></span>
+              </div>
+            </div>
+          </div>
           <ScrollAnimation
             animateOnce
             animateIn="fadeIn"
@@ -109,7 +109,7 @@ class TourReligion extends Component {
                     />
                     <h3 className="p-tour-description-title">SCHEDULE</h3>
                     <hr className="p-tour-description-divider" />
-                    <p className="p-tour-description-p">MON TO SAT</p>
+                    <p className="p-tour-description-p">WED & SAT</p>
                     <p className="p-tour-description-p p-tour-annotation">
                       (9AM - 11AM)
                     </p>
@@ -123,7 +123,7 @@ class TourReligion extends Component {
                     />
                     <h3 className="p-tour-description-title">DURATION</h3>
                     <hr className="p-tour-description-divider" />
-                    <p className="p-tour-description-p">2.0 HOURS</p>
+                    <p className="p-tour-description-p">2.5 HOURS</p>
                     <p className="p-tour-description-p p-tour-annotation">
                       Subject to traffic conditions
                     </p>
@@ -138,12 +138,9 @@ class TourReligion extends Component {
                     <h3 className="p-tour-description-title">TICKETING</h3>
                     <hr className="p-tour-description-divider" />
                     <p className="p-tour-description-p">
-                      Adult: S$35 <br />
-                      Child: S$20
+                      Adult: S$40 <br />
                     </p>
-                    <p className="p-tour-description-p p-tour-annotation">
-                      (6 - 12 years old)
-                    </p>
+                    <p className="p-tour-description-p p-tour-annotation"></p>
                   </div>
                 </li>
               </ul>
@@ -159,9 +156,25 @@ class TourReligion extends Component {
         >
           <div className="p-tour-video_description">
             <section className="p-tour-video_block">
-              <div className="video-wrapper" onClick={this.openModal}>
-                <div className="p-tour-video_block-iframe_wrap"></div>
-                <a className="tour-video-image-control paused"></a>
+              <div className="video-wrapper">
+                <div className="p-tour-video_block-iframe_wrap">
+                  <Slider
+                    className="slider-wrapper"
+                    infinite={true}
+                    autoplay={true}
+                  >
+                    {content.map((item, index) => (
+                      <div
+                        key={index}
+                        className="slider-content tour-description-slider"
+                        style={{
+                          background: `url('${item.image}')`,
+                          backgroundSize: "center"
+                        }}
+                      ></div>
+                    ))}
+                  </Slider>
+                </div>
               </div>
               <img
                 src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
@@ -170,30 +183,6 @@ class TourReligion extends Component {
               />
             </section>
           </div>
-
-          <ReactModal
-            isOpen={this.state.modalIsOpen}
-            contentLabel="Modal"
-            onRequestClose={this.closeModal}
-            style={modalStyles}
-            className="react-modal"
-          >
-            <video
-              id="video1"
-              className="intro-video"
-              autoPlay="true"
-              loop="true"
-              playsinline="true"
-              poster=""
-            >
-              <source id="mp4" src={this.state.videoUrl} type="video/mp4" s />
-            </video>
-            <a
-              className="video-control video-control-first js-video-control playing"
-              data-video="video1"
-            ></a>
-            <a className="close-video" onClick={this.closeModal}></a>
-          </ReactModal>
 
           <div className="p-tour-timeline-block">
             <h1>You will visit...</h1>
@@ -300,33 +289,7 @@ class TourReligion extends Component {
           <div className="p-main-perks_block">
             <h1>What your edu-tainer says...</h1>
             <Testimonial />
-            <div
-              className="bokunButton"
-              disabled
-              id="bokun_676c790a_eeab_4d3a_8c70_15101027246c"
-              data-src="https://widgets.bokun.io/online-sales/a186cc43-6cac-4331-b827-83773d45435d/experience/249563?partialView=1"
-            >
-              Join this tour
-            </div>
-
-            <Helmet>
-              <script
-                type="text/javascript"
-                src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=a186cc43-6cac-4331-b827-83773d45435d"
-                sync
-              ></script>
-            </Helmet>
           </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce
-          animateIn="fadeIn"
-          offSet={10}
-          delay={500}
-          initiallyVisible={false}
-          className="tour-checkout-wrap"
-        >
-          <ExploreMore />
         </ScrollAnimation>
       </div>
     );

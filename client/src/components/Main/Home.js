@@ -6,10 +6,8 @@ class Home extends Component {
     super(props);
     this.state = {
       visible: false,
-      go_to_tour: false,
-      width: window.innerWidth
+      go_to_tour: false
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -18,19 +16,6 @@ class Home extends Component {
 
   componentWillUnmount() {
     clearTimeout(this.fadeIn);
-  }
-
-  handleClick(route) {
-    this.setState({
-      go_to_tour: true
-    });
-
-    if (this.state.width > 600) {
-      // Set transition for mobile
-      setTimeout(() => this.props.history.push(route), 1500);
-    } else {
-      setTimeout(() => this.props.history.push(route), 900);
-    }
   }
 
   render() {
@@ -45,7 +30,6 @@ class Home extends Component {
             border="0"
             className="l-default-logo"
           />
-          <hr className="l-default-divider" />
         </header>
         <div className="container homepage-title-container">
           <div
@@ -59,38 +43,22 @@ class Home extends Component {
               <p className="homepage-title-view-right">about?</p>
             </div>
             <div className="p-index-button_block">
-              <button
-                className="ui-button ui-button-transparent p-index-button"
-                onClick={() => this.handleClick("tours/religion")}
+              <a
+                href="/tours/religion"
+                className="ui-button ui-button-transparent p-index-button active-home-link"
               >
                 Religion
-              </button>
+              </a>
             </div>
             <div className="p-index-button_block">
-              <button
-                className="ui-button ui-button-transparent p-index-button p-index-button-no-right"
-                onClick={() => this.handleClick("tours/politics")}
-              >
-                <a>Politics</a>
-              </button>
-              <button
-                className="ui-button ui-button-transparent p-index-button p-index-button-no-left"
-                onClick={() => this.handleClick("tours/food")}
-              >
+              <a className="ui-button ui-button-transparent p-index-button p-index-button-no-right">
+                Politics
+              </a>
+              <a className="ui-button ui-button-transparent p-index-button p-index-button-no-left">
                 Food
-              </button>
+              </a>
             </div>
           </div>
-          <img
-            src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
-            alt="car"
-            className={
-              this.state.go_to_tour
-                ? "p-index-car car-move-right"
-                : "p-index-car"
-            }
-            border="0"
-          />
         </div>
       </div>
     );

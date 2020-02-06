@@ -28,6 +28,7 @@ class Footer extends Component {
               <h4 data-v-cedeba38="">About us</h4>
               <p data-v-cedeba38="">
                 We conduct walking tours in Singapore that are fun, authentic —
+                <br />
                 but most importantly —{" "}
                 <span style={{ color: "#fbc91b", "font-weight": "bold" }}>
                   edu

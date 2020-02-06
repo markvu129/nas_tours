@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./css/Testimonial.css";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
-import { Helmet } from "react-helmet";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -29,7 +28,7 @@ class Testimonial extends Component {
       <div className="testimonial-container">
         <div className="testimonial-div">
           <Slider className="slider-wrapper" infinite={true}>
-            {content.map((item, index) => (
+            {content.map(item => (
               <div className="tour-guide-div">
                 <div className="arrow-prev"></div>
                 <div className="tour-guide-msg">
