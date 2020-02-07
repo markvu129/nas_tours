@@ -121,7 +121,7 @@ body {
 }
 
 .l-default-logo {
-  margin-left: 100px;
+  margin: 0 auto;
   display: block;
   padding: 60px 0px 0px 0px;
   width: 300px;
@@ -250,7 +250,6 @@ body {
   }
 
   .l-default-logo {
-    margin-left: 40px;
     width: 200px;
   }
 
