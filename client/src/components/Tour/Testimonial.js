@@ -13,14 +13,21 @@ class Testimonial extends Component {
       {
         image: "/assets/img/images/tat_yam.jpg",
         text:
-          "Let us show you how Singaporeans fight segragation daily to become one of the world's most diverse societies",
-        author: "TY - Co-founder"
+          "Learn to appreciate and embrace the differences between races and religions. " +
+          "You'll be amazed by the perspectives that this tour can bring you.",
+        author: "Jan Chow - Tour Guide"
       },
       {
         image: "/assets/img/images/tat_yam.jpg",
         text:
-          "Let us show you how Singaporeans fight segragation daily to become one of the world's most diverse societies",
-        author: "TY - Co-founder"
+          "This tour is not for the casual tourist! Come interact with us and get real, authentic insights to life in Singapore.",
+        author: "Kyanta Yap - Tour Guide"
+      },
+      {
+        image: "/assets/img/images/tat_yam.jpg",
+        text:
+          "We're going to change your mind about what is possible, for people of different beliefs to live together.",
+        author: "Byron Koh - Tour Guide"
       }
     ];
 

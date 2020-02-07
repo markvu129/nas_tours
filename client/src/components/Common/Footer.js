@@ -55,7 +55,7 @@ class Footer extends Component {
               </div>
             </div>
             <div
-              className="c-footer-info-block c-footer-block-links"
+              className="c-footer-info-block c-footer-block-links terms-and-conditions-footer"
               data-v-cedeba38=""
             >
               <ul data-v-cedeba38="">
@@ -65,7 +65,7 @@ class Footer extends Component {
                     className="c-footer-links nuxt-link-active"
                     data-v-cedeba38=""
                   >
-                    Terms and Conditions
+                    Terms & Conditions
                   </a>
                 </li>
                 <li data-v-cedeba38="">
@@ -82,38 +82,43 @@ class Footer extends Component {
             </div>
             <div className="c-footer-info-block footer-icon" data-v-cedeba38="">
               <ul data-v-cedeba38="" className="footer-icon-list">
-                <li data-v-cedeba38="">
+                <li>
                   <a
                     href="https://www.tripadvisor.com.sg/Attraction_Review-g294265-d19699980-Reviews-Nas_Tours-Singapore.html"
                     className="c-footer-social c-footer-social-tripadviser"
-                    data-v-cedeba38=""
-                  />
-                  <img
-                    className="footer-img"
-                    src="https://svgshare.com/i/HA0.svg"
-                  ></img>
+                    target="_blank"
+                  >
+                    <img
+                      className="footer-img"
+                      src="https://svgshare.com/i/HA0.svg"
+                    ></img>
+                  </a>
                 </li>
                 <li data-v-cedeba38="">
                   <a
                     href="https://www.facebook.com/Nas-Tours-104146571094831/"
                     className="c-footer-social c-footer-social-facebook"
                     data-v-cedeba38=""
-                  />
-                  <img
-                    className="footer-img"
-                    src="https://svgshare.com/i/HA1.svg"
-                  ></img>
+                    target="_blank"
+                  >
+                    <img
+                      className="footer-img"
+                      src="https://svgshare.com/i/HA1.svg"
+                    ></img>
+                  </a>
                 </li>
                 <li data-v-cedeba38="">
                   <a
                     href="https://www.instagram.com/nasdaily"
                     className="c-footer-social c-footer-social-instagram"
                     data-v-cedeba38=""
-                  />
-                  <img
-                    className="footer-img"
-                    src="https://svgshare.com/i/HA2.svg"
-                  ></img>
+                    target="_blank"
+                  >
+                    <img
+                      className="footer-img"
+                      src="https://svgshare.com/i/HA2.svg"
+                    ></img>
+                  </a>
                 </li>
               </ul>
             </div>

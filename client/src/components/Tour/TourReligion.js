@@ -4,7 +4,6 @@ import "./Testimonial";
 import Testimonial from "./Testimonial";
 import ImageSlider from "./Slider";
 import ScrollAnimation from "react-animate-on-scroll";
-import Slider from "react-animated-slider";
 
 class TourReligion extends Component {
   constructor(props) {
@@ -24,31 +23,10 @@ class TourReligion extends Component {
   }
 
   skipVideo() {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 770);
   }
 
   render() {
-    const content = [
-      {
-        image: "/assets/img/images/religion_tour_cover.jpg"
-      },
-      {
-        image: "/assets/img/images/tour_religion_2.jpg"
-      },
-      {
-        image: "/assets/img/images/religion_tour_cover.jpg"
-      },
-      {
-        image: "/assets/img/images/tour_religion_1.jpg"
-      },
-      {
-        image: "/assets/img/images/tour_religion_3.jpg"
-      },
-      {
-        image: "/assets/img/images/tour_religion_5.jpg"
-      }
-    ];
-
     return (
       <div className="tour-religion">
         <div data-v-4dcd448f="" className="tour-intro">
@@ -87,7 +65,7 @@ class TourReligion extends Component {
             initiallyVisible={false}
           >
             <div className="p-tour-description testimonial">
-              <h1>THE RACE AND RELIGION TOUR</h1>
+              <h1 className="tour-intro-title">THE RACE AND RELIGION TOUR</h1>
               <p className="tour-description">
                 This walking tour in Singapore will show you how locals of{" "}
                 <span className="testimonial-highlight">different</span> races
@@ -108,10 +86,9 @@ class TourReligion extends Component {
                       src="/assets/img/images/nas_tours_schedule.svg"
                     />
                     <h3 className="p-tour-description-title">SCHEDULE</h3>
-                    <hr className="p-tour-description-divider" />
                     <p className="p-tour-description-p">WED & SAT</p>
                     <p className="p-tour-description-p p-tour-annotation">
-                      (9AM - 11AM)
+                      (10AM - 12.30PM)
                     </p>
                   </div>
                 </li>
@@ -122,7 +99,6 @@ class TourReligion extends Component {
                       src="/assets/img/images/nas_tours_clock.svg"
                     />
                     <h3 className="p-tour-description-title">DURATION</h3>
-                    <hr className="p-tour-description-divider" />
                     <p className="p-tour-description-p">2.5 HOURS</p>
                     <p className="p-tour-description-p p-tour-annotation">
                       Subject to traffic conditions
@@ -136,12 +112,17 @@ class TourReligion extends Component {
                       src="/assets/img/images/nas_tours_ticket.svg"
                     />
                     <h3 className="p-tour-description-title">TICKETING</h3>
-                    <hr className="p-tour-description-divider" />
                     <p className="p-tour-description-p">
                       Adult: S$40 <br />
                     </p>
+                    <p className="p-tour-description-p p-tour-annotation">
+                      12 years old and above
+                    </p>
                     <p className="p-tour-description-p p-tour-annotation"></p>
                   </div>
+                </li>
+                <li className="temple-icon">
+                  <img src="/assets/img/images/temple.png"></img>
                 </li>
               </ul>
             </div>
@@ -157,24 +138,7 @@ class TourReligion extends Component {
           <div className="p-tour-video_description">
             <section className="p-tour-video_block">
               <div className="video-wrapper">
-                <div className="p-tour-video_block-iframe_wrap">
-                  <Slider
-                    className="slider-wrapper"
-                    infinite={true}
-                    autoplay={true}
-                  >
-                    {content.map((item, index) => (
-                      <div
-                        key={index}
-                        className="slider-content tour-description-slider"
-                        style={{
-                          background: `url('${item.image}')`,
-                          backgroundSize: "center"
-                        }}
-                      ></div>
-                    ))}
-                  </Slider>
-                </div>
+                <div className="p-tour-video_block-iframe_wrap"></div>
               </div>
               <img
                 src="https://i.ibb.co/ZVvywSV/f52fbedf4ce7f378fa8c98197d59580c.png"
@@ -202,13 +166,14 @@ class TourReligion extends Component {
               <div className="p-tour-timeline-text">
                 <p>City Hall</p>
               </div>
-              <div className="p-tour-timeline-text">
-                <p>Chinatown</p>
-              </div>
-              <div className="p-tour-timeline-text">
-                <p>Sikh Temple</p>
+              <div>
+                <img
+                  className="bus-icon"
+                  src="/assets/img/images/car.jpg"
+                ></img>
               </div>
             </div>
+
             <ul className="p-tour-description-list p-tour-timeline-mobile">
               <li className="p-tour-description-l">
                 <div className="p-tour-description-div">
@@ -251,28 +216,6 @@ class TourReligion extends Component {
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
                     CITY HALL
-                  </p>
-                </div>
-              </li>
-              <li className="p-tour-description-l">
-                <div className="p-tour-description-div">
-                  <img
-                    className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/chinatown.png"
-                  />
-                  <p className="p-tour-description-p p-tour-destination-p-mobile">
-                    CHINATOWN
-                  </p>
-                </div>
-              </li>
-              <li className="p-tour-description-l">
-                <div className="p-tour-description-div">
-                  <img
-                    className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/tour_religion_1_small.jpg"
-                  />
-                  <p className="p-tour-description-p p-tour-destination-p-mobile">
-                    SIKH TEMPLE
                   </p>
                 </div>
               </li>
