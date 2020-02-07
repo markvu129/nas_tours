@@ -6,23 +6,27 @@ class Home extends Component {
     super(props);
     this.state = {
       visible: false,
-      go_to_tour: false
+      go_to_tour: false,
+      videoUrl: false
     };
   }
 
-  componentDidMount() {
-    this.fadeIn = setTimeout(() => this.setState({ visible: true }), 100);
-  }
+  componentDidMount() {}
 
-  componentWillUnmount() {
-    clearTimeout(this.fadeIn);
-  }
+  componentWillUnmount() {}
 
   render() {
+    let videoUrl =
+      "https://res.cloudinary.com/markvu129/video/upload/v1581072083/nas_tour_cover_vid_drhfma.mp4";
+    if (window.innerWidth < 600) {
+      videoUrl =
+        "https://res.cloudinary.com/markvu129/video/upload/c_scale,h_750/v1581072083/nas_tour_cover_vid_drhfma.mp4";
+    } else {
+      videoUrl =
+        "https://res.cloudinary.com/markvu129/video/upload/v1581072083/nas_tour_cover_vid_drhfma.mp4";
+    }
     return (
-      <div
-        className={this.state.visible ? "welcome-area fade-in" : "welcome-area"}
-      >
+      <div className={"welcome-area fade-in"}>
         <header className="header">
           <img
             src="/assets/img/images/nas_tours_new_logo.svg"
@@ -60,6 +64,18 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
+        <video
+          id="main-video"
+          className="main-video"
+          autoPlay="true"
+          loop="true"
+          playsinline="true"
+          poster=""
+          muted={true}
+        >
+          <source id="mp4" src={videoUrl} type="video/mp4" />
+        </video>
       </div>
     );
   }

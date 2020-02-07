@@ -287,7 +287,7 @@ html {
 .p-tour-video_block {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
+  nastour_cover_mobile.jpg-webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 680px;
   height: 430px;
@@ -320,6 +320,10 @@ html {
   width: 100%;
   height: 90%;
   border-radius: 5px;
+}
+
+.intro-video:hover {
+  cursor: pointer;
 }
 
 .p-tour-video_block iframe {
@@ -527,17 +531,6 @@ html {
   top: 20%;
 }
 
-.p-tour-timeline-text:nth-child(1):after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 112px;
-  height: 110px;
-  border-radius: 100%;
-  border: 2px solid transparent;
-  background: url("/assets/img/images/destination/little_india.png");
-}
-
 .p-tour-timeline-text:nth-child(2):after {
   content: "";
   position: absolute;
@@ -558,6 +551,10 @@ html {
   transform: scale(1.1);
   box-shadow: 0 0 0 5px #0089e9;
   color: #0089e9;
+}
+
+.p-tour-timeline-text:nth-child(2):hover {
+  cursor: pointer;
 }
 
 .p-tour-timeline-text:nth-child(3):after {
@@ -582,6 +579,10 @@ html {
   color: #0089e9;
 }
 
+.p-tour-timeline-text:nth-child(3):hover {
+  cursor: pointer;
+}
+
 .p-tour-timeline-text:nth-child(4):after {
   content: "";
   position: absolute;
@@ -600,13 +601,17 @@ html {
   color: #0089e9;
 }
 
+.p-tour-timeline-text:nth-child(4):hover {
+  cursor: pointer;
+}
+
 .p-tour-timeline-text:nth-child(5):after {
   content: "";
   position: absolute;
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: url("/assets/img/images/destination/city_hall.png");
+  background: url("/assets/img/images/destination/sikh_temple.png");
 }
 
 .p-tour-timeline-text:nth-child(5):hover:after {
@@ -616,6 +621,10 @@ html {
   transform: scale(1.1);
   box-shadow: 0 0 0 5px #0089e9;
   color: #0089e9;
+}
+
+.p-tour-timeline-text:nth-child(5):hover {
+  cursor: pointer;
 }
 
 .p-tour-timeline-text:nth-child(6):after {
@@ -636,28 +645,8 @@ html {
   color: #0089e9;
 }
 
-.p-tour-timeline-text:nth-child(7):after {
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  border-radius: 100%;
-  background: url("/assets/img/images/destination/tour_religion_1_small.jpg");
-}
-
-.p-tour-timeline-text:nth-child(7):hover:after {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  box-shadow: 0 0 0 5px #0089e9;
-  color: #0089e9;
-}
-
-.tour-checkout-wrap {
-  height: 700px;
-  background: url("https://i.ibb.co/dfPmKtY/background-singapore.png") no-repeat;
-  background-size: cover;
+.p-tour-timeline-text:nth-child(6):hover {
+  cursor: pointer;
 }
 
 .tour-religion {
@@ -832,10 +821,12 @@ html {
   }
 
   .p-tour-video_block-iframe_wrap {
-    width: 350px;
+    width: 370px;
     height: 250px;
     margin: 0 auto;
     text-align: center;
+    background: url("/assets/img/images/nastour_cover_mobile.jpg") no-repeat;
+    background-size: cover;
   }
 
   .tour-description-slider {

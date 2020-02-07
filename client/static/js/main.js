@@ -68,4 +68,5 @@ $(document).ready(function() {
         $('.bus-icon').removeClass('bus-icon-4').removeClass('bus-icon-2').removeClass('bus-icon-3');
     },function(){
     });
+
 });

@@ -165,7 +165,7 @@ class TourReligion extends Component {
                 <p>Waterloo Street</p>
               </div>
               <div className="p-tour-timeline-text">
-                <p>City Hall</p>
+                <p>Sikh Temple</p>
               </div>
               <div>
                 <img
@@ -213,10 +213,10 @@ class TourReligion extends Component {
                 <div className="p-tour-description-div">
                   <img
                     className="tour-description-icon p-tour-timeline-icon-mobile"
-                    src="/assets/img/images/destination/city_hall.png"
+                    src="/assets/img/images/destination/sikh_temple.png"
                   />
                   <p className="p-tour-description-p p-tour-destination-p-mobile">
-                    CITY HALL
+                    SIKH TEMPLE
                   </p>
                 </div>
               </li>
