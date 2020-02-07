@@ -41,10 +41,10 @@ class Home extends Component {
               this.state.go_to_tour ? "travel-div fade-out" : "travel-div"
             }
           >
-            <p className="homepage-title-view-left">What are you</p>
+            <p className="homepage-title-view-left">WHAT ARE YOU</p>
             <div className="homepage-excited-block">
               <h4 className="homepage-title-big">EXCITED</h4>
-              <p className="homepage-title-view-right">about?</p>
+              <p className="homepage-title-view-right">ABOUT?</p>
             </div>
             <div className="p-index-button_block">
               <a

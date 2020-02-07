@@ -66,7 +66,7 @@ class NavBar extends Component {
           <a className="close" onClick={this.toggleNavbar} />
           <li>
             <a href="/" className="nav-links">
-              Home
+              HOME
             </a>
           </li>
           {/*<li>*/}
@@ -90,7 +90,7 @@ class NavBar extends Component {
                   : "nav-links"
               }
             >
-              Tours
+              TOURS
             </a>
           </li>
         </ul>
