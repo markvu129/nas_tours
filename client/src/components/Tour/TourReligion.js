@@ -73,9 +73,10 @@ class TourReligion extends Component {
                 <span className="testimonial-highlight">peacefully</span>. We
                 will visit ethnic quarters and interact with people of various
                 cultural groups. We hope this walking tour will{" "}
-                <span className="testimonial-highlight">spark</span>{" "}
-                conversations and allow you to immerse in a uniquely Singaporean
-                experience.
+                <span className="testimonial-highlight">
+                  spark conversations
+                </span>{" "}
+                and allow you to immerse in a uniquely Singaporean experience.
                 <br />
               </p>
               <ul className="p-tour-description-list">
@@ -88,7 +89,7 @@ class TourReligion extends Component {
                     <h3 className="p-tour-description-title">SCHEDULE</h3>
                     <p className="p-tour-description-p">WED & SAT</p>
                     <p className="p-tour-description-p p-tour-annotation">
-                      (10AM - 12.30PM)
+                      10AM - 12.30PM
                     </p>
                   </div>
                 </li>

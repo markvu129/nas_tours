@@ -448,16 +448,32 @@ html {
 }
 
 .bus-icon {
-  width: 150px;
-  height: 70px;
+  width: 180px;
+  height: 80px;
   position: absolute;
   top: 110%;
   left: 5%;
+  transition-duration: 1.5s;
+}
+
+.bus-icon-2 {
+  left: 31%;
+  transition-duration: 1.5s;
+}
+
+.bus-icon-3 {
+  left: 56%;
+  transition-duration: 1.5s;
+}
+
+.bus-icon-4 {
+  left: 81%;
+  transition-duration: 1.5s;
 }
 
 .bus-icon img {
-  width: 150px;
-  height: 70px;
+  width: 180px;
+  height: 80px;
 }
 
 .p-tour-timeline-text {
