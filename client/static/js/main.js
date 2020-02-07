@@ -41,10 +41,10 @@ $(document).ready(function() {
     $("#mute").click( function (){
         if( $(".intro-video").prop('muted') ) {
             $(".intro-video").prop('muted', false);
-            $("#mute").css("background-image","url(http://image.flaticon.com/icons/svg/10/10430.svg)");
+            $("#mute").css("background-image","url(/assets/img/images/unmute.svg)");
         } else {
             $(".intro-video").prop('muted', true);
-            $("#mute").css("background-image","url(http://image.flaticon.com/icons/svg/10/10776.svg)");
+            $("#mute").css("background-image","url(/assets/img/images/mute.svg)");
         }
     });
 
