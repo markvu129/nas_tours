@@ -155,18 +155,40 @@ body {
   font-size: 0.8em;
 }
 
-/* Smaller screen */
-@media only screen and (min-width: 737px) and (max-width: 1199px) {
+/* Smaller screen - ipad */
+@media only screen and (min-width: 415px) and (max-width: 1199px) {
   .homepage-title-big {
-    font-size: 6em !important;
+    font-size: 6.2em !important;
+    letter-spacing: 0.1em;
   }
 
   .homepage-title-view-right {
-    padding-right: 150px;
+    text-align: center;
   }
 
   .homepage-title-view-left {
     padding-left: 0px;
+    text-align: center;
+    margin-top: 120px !important;
+  }
+
+  .p-index-button_block .p-index-button {
+    flex-basis: 55%;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    height: 70px;
+  }
+
+  .p-index-button-no-right {
+    margin-bottom: 20px !important;
+  }
+
+  .main-video {
+    object-fit: fill !important;
+    width: 1000px !important;
+    max-width: 1199px !important;
   }
 }
 
@@ -174,7 +196,6 @@ body {
 @media only screen and (min-width: 1200px) and (max-width: 2400px) {
   .main-video {
     object-fit: fill !important;
-    width: 1500px;
   }
   .homepage-title-view-left {
     padding-left: 250px;
@@ -214,6 +235,11 @@ body {
 
   .homepage-title-big {
     font-size: 3.5em !important;
+    margin-left: 5px;
+  }
+
+  .main-video {
+    height: 900px;
   }
 }
 
@@ -247,7 +273,8 @@ body {
     font-size: 3em !important;
     width: 50%;
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .p-index-car {
@@ -292,25 +319,35 @@ body {
   }
 
   .homepage-title-big {
-    margin-left: 30px !important;
+    margin-left: 20px !important;
+    margin-right: 5px;
   }
 }
 
-/* Large screen */
-@media only screen and (min-width: 1200px) and (max-width: 1799px) {
-}
-
 /* Very large screen */
-@media only screen and (min-width: 1799px) {
-}
-
-/* Iphone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-}
-
-/* Iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
   .main-video {
-    height: 900px;
+    width: 1500px;
+    object-fit: fill !important;
+  }
+}
+
+/* Iphone 5/SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  .homepage-title-big {
+    font-size: 2.5em !important;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .homepage-title-view-right {
+    margin-left: 0px;
+    font-size: 2em !important;
+    padding-top: 11px !important;
+    padding-left: 10px;
+  }
+
+  .homepage-title-view-left {
+    font-size: 2em !important;
   }
 }
