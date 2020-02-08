@@ -24,9 +24,12 @@ class Footer extends Component {
             />{" "}
           </div>
           <section className="c-footer-info" data-v-cedeba38="">
-            <div className="c-footer-info-block" data-v-cedeba38="">
+            <div
+              className="c-footer-info-block c-footer-about_block"
+              data-v-cedeba38=""
+            >
               <h4 data-v-cedeba38="">About us</h4>
-              <p data-v-cedeba38="">
+              <p data-v-cedeba38="" className="c-footer-tour-description">
                 We conduct walking tours in Singapore that are fun, authentic —
                 <br />
                 but most importantly —{" "}
@@ -38,7 +41,7 @@ class Footer extends Component {
             </div>
             <div className="c-footer-info-block" data-v-cedeba38="">
               <h4 data-v-cedeba38="">Contact us</h4>
-              <div data-v-cedeba38="">
+              <div data-v-cedeba38="" className="c-footer-contact_link-div">
                 <span className="c-footer-contact_link" data-v-cedeba38="">
                   <i className="fa fa-phone fa-5x footer-icon"></i>
                   <a href="tel:+6591517567" data-v-cedeba38="">
@@ -58,7 +61,7 @@ class Footer extends Component {
               className="c-footer-info-block c-footer-block-links terms-and-conditions-footer"
               data-v-cedeba38=""
             >
-              <ul data-v-cedeba38="">
+              <ul data-v-cedeba38="" className="c-footer-info-list">
                 <li data-v-cedeba38="">
                   <a
                     href="/#"

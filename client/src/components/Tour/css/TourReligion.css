@@ -850,8 +850,8 @@ html {
   }
 
   .p-tour-description img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   .p-tour-description-p {
@@ -896,5 +896,29 @@ html {
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
   .testimonial-img {
     padding-top: 150px !important;
+  }
+}
+
+/* Smaller screen - ipad */
+@media only screen and (min-width: 414px) and (max-width: 1199px) {
+  .temple-icon {
+    left: 37%;
+  }
+
+  .p-tour-description img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .temple-icon img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Ipad pro */
+@media only screen and (min-width: 414px) and (max-width: 1199px) {
+  .temple-icon {
+    left: 41%;
   }
 }

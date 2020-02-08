@@ -168,10 +168,40 @@ ul[data-v-cedeba38] {
   }
 }
 
+/* Smaller screen - ipad */
+@media only screen and (min-width: 415px) and (max-width: 1023px) {
+  .c-footer[data-v-cedeba38] {
+    height: 500px;
+  }
+
+  .c-footer-contact_link {
+    width: 300px;
+  }
+
+  .c-footer-info-list {
+    padding-left: 0px;
+  }
+
+  .c-footer-contact_link-div {
+    width: 200px;
+  }
+
+  .c-footer-tour-description {
+    width: 120px;
+  }
+}
+
+/* Smaller screen - ipad pro */
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+  .c-footer[data-v-cedeba38] {
+    height: 700px;
+  }
+}
+
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   .c-footer[data-v-cedeba38] {
-    height: 570px !important;
+    height: 570px;
   }
 
   .c-footer-wrap[data-v-cedeba38] {
@@ -217,5 +247,11 @@ ul[data-v-cedeba38] {
 
   .footer-icon-list {
     margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 570px) {
+  .c-footer[data-v-cedeba38] {
+    height: 650px;
   }
 }

@@ -333,7 +333,7 @@ body[data-aos-duration="600"] [data-aos] {
   }
 
   .p-main-perks_block {
-    height: 600px !important;
+    height: 620px;
   }
 
   .p-main-perks_block-quotes li:nth-child(1) {
@@ -357,5 +357,12 @@ body[data-aos-duration="600"] [data-aos] {
 
   .p-main-perks_block-quotes li:nth-child(2) {
     min-height: 260px;
+  }
+}
+
+/* Iphone 5/SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  .p-main-perks_block {
+    height: 660px;
   }
 }
