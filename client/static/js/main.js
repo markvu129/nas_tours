@@ -50,18 +50,24 @@ $(document).ready(function() {
 
     $('.p-tour-timeline-text:nth-child(3)').hover(function(){
         $('.bus-icon').addClass('bus-icon-2').removeClass('bus-icon-3');
+        $('.p-tour-timeline-text:nth-child(2)').addClass('no-shadow')
     },function(){
+        $('.p-tour-timeline-text:nth-child(2)').removeClass('no-shadow')
     });
 
     $('.p-tour-timeline-text:nth-child(4)').hover(function(){
         $('.bus-icon').addClass('bus-icon-3');
+        $('.p-tour-timeline-text:nth-child(2)').addClass('no-shadow')
     },function(){
+        $('.p-tour-timeline-text:nth-child(2)').removeClass('no-shadow')
     });
 
     $('.p-tour-timeline-text:nth-child(5)').hover(function(){
         $('.bus-icon').addClass('bus-icon-4');
+        $('.p-tour-timeline-text:nth-child(2)').addClass('no-shadow')
     },function(){
         $('.bus-icon').removeClass('bus-icon-4').removeClass('bus-icon-2').removeClass('bus-icon-3');
+        $('.p-tour-timeline-text:nth-child(2)').removeClass('no-shadow')
     });
 
     $('.p-tour-timeline-text:nth-child(2)').hover(function(){

@@ -538,10 +538,15 @@ html {
   height: 110px;
   border-radius: 100%;
   background: url("/assets/img/images/destination/little_india.png");
-  box-shadow: 0 0 0 3px #fff;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
+  box-shadow: 0 0 0 5px #0089e9;
+  color: #0089e9;
+}
+
+.p-tour-timeline-text:nth-child(2).no-shadow:after {
+  box-shadow: 0 0 0 3px white;
 }
 
 .p-tour-timeline-text:nth-child(2):hover:after {
