@@ -11,7 +11,7 @@ class TourReligion extends Component {
     super(props);
     this.state = {
       videoUrl:
-        "https://res.cloudinary.com/markvu129/video/upload/v1580803822/nas_tours_intro_xfce4h.mov"
+        "https://res.cloudinary.com/markvu129/video/upload/v1581323081/nas_tours_final_ybukma.mov"
     };
   }
 
@@ -68,9 +68,6 @@ class TourReligion extends Component {
             <div className="p-tour-description testimonial">
               <h1 className="tour-intro-title">THE RACE AND RELIGION TOUR</h1>
               <div className="tour-description-blue">
-                <div className="temple-icon-mobile">
-                  <img src="/assets/img/images/temple.png"></img>
-                </div>
                 <p className="tour-description">
                   This walking tour in Singapore will show you how locals of
                   different races and religions coexist peacefully. We will

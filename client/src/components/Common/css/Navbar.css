@@ -112,7 +112,7 @@
 .bokunButton {
   background: #fbc91b;
   color: #000;
-  font-weight: bold;
+  font-weight: 1000 !important;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -164,6 +164,10 @@
   .navbar {
     padding: 0px 0px 10px 0px;
     height: 110px;
+  }
+
+  .nav-links {
+    font-weight: bold;
   }
 
   .nav-links:hover {
