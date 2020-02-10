@@ -66,6 +66,9 @@ class TourReligion extends Component {
           >
             <div className="p-tour-description testimonial">
               <h1 className="tour-intro-title">THE RACE AND RELIGION TOUR</h1>
+              <div className="temple-icon-mobile">
+                <img src="/assets/img/images/temple.png"></img>
+              </div>
               <p className="tour-description">
                 This walking tour in Singapore will show you how locals of{" "}
                 <span className="testimonial-highlight">different</span> races

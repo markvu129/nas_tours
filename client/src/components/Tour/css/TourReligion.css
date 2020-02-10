@@ -213,7 +213,7 @@ html {
 }
 
 .tour-description {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 40px;
   text-align: justify;
   color: black;
@@ -374,9 +374,9 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background: #fbc91b;
+  background: #0089e9;
   list-style: none;
-  margin-top: 80px;
+  margin-top: 140px;
   position: relative;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -400,6 +400,10 @@ html {
   font-size: 1em;
   font-weight: bold;
   margin: 20px 20px 0px 20px;
+}
+
+.temple-icon-mobile {
+  display: none;
 }
 
 .p-tour-description-p {
@@ -757,33 +761,50 @@ html {
 
   .tour-description {
     font-size: 0.8em;
+    margin-top: 40px;
   }
 
   .temple-icon {
-    width: 130px !important;
-    height: 130px !important;
-    position: absolute;
-    top: -18%;
-    left: 33%;
+    display: none;
   }
 
-  .temple-icon img {
-    width: 130px !important;
-    height: 130px !important;
+  .temple-icon-mobile {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+    width: 110px !important;
+    height: 110px !important;
+    margin-top: 40px;
+  }
+
+  .temple-icon-mobile img {
+    width: 110px !important;
+    height: 110px !important;
   }
 
   .p-tour-timeline {
     display: none;
   }
 
+  .p-tour-description-list {
+    padding-top: 40px;
+    margin-top: 20px;
+    background: white;
+  }
+
   .p-tour-timeline-mobile {
     display: inline-flex;
     margin-top: 40px;
     padding-top: 0px;
+    background: white;
+  }
+
+  .p-tour-description-l {
+    flex-basis: 55%;
   }
 
   .p-tour-timeline-mobile .p-tour-description-l {
-    flex-basis: 50%;
+    flex-basis: 50% !important;
     margin-top: 40px;
   }
 
@@ -876,6 +897,7 @@ html {
 
   .tour-intro {
     min-height: 1150px;
+    padding-bottom: 0px;
   }
 
   .testimonial-tag {
@@ -912,18 +934,40 @@ html {
 
 /* Smaller screen - ipad */
 @media only screen and (min-width: 414px) and (max-width: 1199px) {
+  .l-default-logo {
+    padding-left: 0px;
+  }
+
+  .tour-intro {
+    padding-bottom: 0px;
+  }
+
   .temple-icon {
-    left: 37%;
+    display: none;
   }
 
-  .p-tour-description img {
-    width: 80px;
-    height: 80px;
+  .temple-icon-mobile {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px !important;
+    height: 150px !important;
+    margin-top: 40px;
   }
 
-  .temple-icon img {
-    width: 150px;
-    height: 150px;
+  .temple-icon-mobile img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .p-tour-description-list {
+    margin-top: 40px;
+    background: white;
+    padding-top: 0px;
+  }
+
+  .p-tour-description-l {
+    flex-basis: 33%;
   }
 }
 

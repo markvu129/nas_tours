@@ -154,7 +154,7 @@ ul[data-v-cedeba38] {
 .footer-icon {
   color: #fbc91b;
   font-size: 24px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .terms-and-conditions-footer {
@@ -171,7 +171,7 @@ ul[data-v-cedeba38] {
 /* Smaller screen - ipad */
 @media only screen and (min-width: 415px) and (max-width: 1023px) {
   .c-footer[data-v-cedeba38] {
-    height: 500px;
+    height: 700px;
   }
 
   .c-footer-contact_link {
@@ -240,13 +240,20 @@ ul[data-v-cedeba38] {
 
   .footer-icon {
     padding-left: 0px;
-    padding-right: 5px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding-right: 10px;
   }
 
   .footer-icon-list {
-    margin-top: 0px;
+    padding-left: 0px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: flex-start !important;
+  }
+
+  .c-footer-tour-description {
+    margin-top: 10px;
   }
 }
 

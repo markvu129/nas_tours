@@ -242,11 +242,11 @@
 /* Smaller screen - ipad */
 @media only screen and (min-width: 668px) and (max-width: 1100px) {
   .l-tour-logo {
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   .bokunButton {
-    margin-left: 55px;
+    margin-left: 35px;
   }
 
   .main-nav li {
