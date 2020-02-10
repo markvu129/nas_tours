@@ -83,6 +83,10 @@
     height: 900px;
     background: url("/assets/img/images/background_iphone.jpg");
   }
+
+  .explore-more-title {
+    margin-bottom: 0px;
+  }
 }
 
 /* Iphone plus */
