@@ -1,6 +1,7 @@
 .tour-checkout-wrap {
   height: 760px;
-  background: url("/assets/img/images/background.jpg");
+  background: url("/assets/img/images/background.jpg") no-repeat;
+  background-size: cover;
 }
 
 .explore-more-section {
@@ -81,7 +82,8 @@
 
   .tour-checkout-wrap {
     height: 900px;
-    background: url("/assets/img/images/background_iphone.jpg");
+    background: url("/assets/img/images/explore_mobile.jpg") no-repeat;
+    background-size: cover;
   }
 
   .explore-more-title {
