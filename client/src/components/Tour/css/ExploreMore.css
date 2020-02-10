@@ -116,8 +116,32 @@
 /* Smaller screen - ipad */
 @media only screen and (min-width: 414px) and (max-width: 1199px) {
   .tour-checkout-wrap {
-    height: 750px;
+    height: 900px;
+    background: url("/assets/img/images/explore_mobile.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+  }
+
+  .explore-more-l {
+    flex-basis: 100%;
+  }
+
+  .explore-more-div-title {
+    font-size: 0.6em !important;
+    padding: 10px 10px;
+  }
+
+  .explore-more-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .explore-more-l:first-child {
+    margin-bottom: 40px;
+  }
+
+  .explore-more-list {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 0px;
   }
 }
