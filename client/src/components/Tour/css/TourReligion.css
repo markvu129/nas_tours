@@ -338,10 +338,6 @@ html {
   padding-top: 50px;
 }
 
-.p-tour-timeline-block h1 {
-  margin-top: 0px;
-}
-
 .p-tour-title {
   width: 240px;
   height: 60px;
@@ -452,7 +448,6 @@ html {
 
 .p-tour-timeline-block h1 {
   margin: 0 auto;
-  margin-top: 70px;
   color: #0089e9;
   font-weight: bold;
   font-size: 50px;

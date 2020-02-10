@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "./css/TourReligion.css";
 import "./css/ExploreMore.css";
 import { Link } from "react-router-dom";
-import history from "../../modules/history";
-
 class ExploreMore extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +14,7 @@ class ExploreMore extends Component {
         <ul className="p-tour-description-list explore-more-list">
           <li className="p-tour-description-l explore-more-l">
             <div className="p-tour-description-div explore-more-div">
-              <Link to="/tours/politics">
+              <Link>
                 <img
                   className="explore-more-img"
                   src="/assets/img/images/tour_religion_2.jpg"
@@ -29,7 +27,7 @@ class ExploreMore extends Component {
           </li>
           <li className="p-tour-description-l explore-more-l">
             <div className="p-tour-description-div explore-more-div">
-              <Link to="/tours/food">
+              <Link>
                 <img
                   className="explore-more-img"
                   src="/assets/img/images/tour_religion_3.jpg"
