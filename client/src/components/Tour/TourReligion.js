@@ -66,66 +66,63 @@ class TourReligion extends Component {
           >
             <div className="p-tour-description testimonial">
               <h1 className="tour-intro-title">THE RACE AND RELIGION TOUR</h1>
-              <div className="temple-icon-mobile">
-                <img src="/assets/img/images/temple.png"></img>
+              <div className="tour-description-blue">
+                <div className="temple-icon-mobile">
+                  <img src="/assets/img/images/temple.png"></img>
+                </div>
+                <p className="tour-description">
+                  This walking tour in Singapore will show you how locals of
+                  different races and religions coexist peacefully. We will
+                  visit ethnic quarters and interact with people of various
+                  cultural groups. We hope this walking tour will spark
+                  conversations and allow you to immerse in a uniquely
+                  Singaporean experience.
+                </p>
+                <ul className="p-tour-description-list">
+                  <li className="p-tour-description-l">
+                    <div className="p-tour-description-div">
+                      <img
+                        className="tour-description-icon"
+                        src="/assets/img/images/nas_tours_schedule.svg"
+                      />
+                      <h3 className="p-tour-description-title">SCHEDULE</h3>
+                      <p className="p-tour-description-p">WED & SAT</p>
+                      <p className="p-tour-description-p p-tour-annotation">
+                        10AM - 12.30PM
+                      </p>
+                    </div>
+                  </li>
+                  <li className="p-tour-description-l">
+                    <div className="p-tour-description-div">
+                      <img
+                        className="tour-description-icon"
+                        src="/assets/img/images/nas_tours_clock.svg"
+                      />
+                      <h3 className="p-tour-description-title">DURATION</h3>
+                      <p className="p-tour-description-p">2.5 HOURS</p>
+                      <p className="p-tour-description-p p-tour-annotation">
+                        Subject to traffic conditions
+                      </p>
+                    </div>
+                  </li>
+                  <li className="p-tour-description-l">
+                    <div className="p-tour-description-div">
+                      <img
+                        className="tour-description-icon"
+                        src="/assets/img/images/nas_tours_ticket.svg"
+                      />
+                      <h3 className="p-tour-description-title">TICKETING</h3>
+                      <p className="p-tour-description-p">
+                        Adult: S$40 <br />
+                      </p>
+                      <p className="p-tour-description-p p-tour-annotation">
+                        12 years old and above
+                      </p>
+                      <p className="p-tour-description-p p-tour-annotation"></p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <p className="tour-description">
-                This walking tour in Singapore will show you how locals of{" "}
-                <span className="testimonial-highlight">different</span> races
-                and religions coexist{" "}
-                <span className="testimonial-highlight">peacefully</span>. We
-                will visit ethnic quarters and interact with people of various
-                cultural groups. We hope this walking tour will{" "}
-                <span className="testimonial-highlight">
-                  spark conversations
-                </span>{" "}
-                and allow you to immerse in a uniquely Singaporean experience.
-                <br />
-              </p>
-              <ul className="p-tour-description-list">
-                <li className="p-tour-description-l">
-                  <div className="p-tour-description-div">
-                    <img
-                      className="tour-description-icon"
-                      src="/assets/img/images/nas_tours_schedule.svg"
-                    />
-                    <h3 className="p-tour-description-title">SCHEDULE</h3>
-                    <p className="p-tour-description-p">WED & SAT</p>
-                    <p className="p-tour-description-p p-tour-annotation">
-                      10AM - 12.30PM
-                    </p>
-                  </div>
-                </li>
-                <li className="p-tour-description-l">
-                  <div className="p-tour-description-div">
-                    <img
-                      className="tour-description-icon"
-                      src="/assets/img/images/nas_tours_clock.svg"
-                    />
-                    <h3 className="p-tour-description-title">DURATION</h3>
-                    <p className="p-tour-description-p">2.5 HOURS</p>
-                    <p className="p-tour-description-p p-tour-annotation">
-                      Subject to traffic conditions
-                    </p>
-                  </div>
-                </li>
-                <li className="p-tour-description-l">
-                  <div className="p-tour-description-div">
-                    <img
-                      className="tour-description-icon"
-                      src="/assets/img/images/nas_tours_ticket.svg"
-                    />
-                    <h3 className="p-tour-description-title">TICKETING</h3>
-                    <p className="p-tour-description-p">
-                      Adult: S$40 <br />
-                    </p>
-                    <p className="p-tour-description-p p-tour-annotation">
-                      12 years old and above
-                    </p>
-                    <p className="p-tour-description-p p-tour-annotation"></p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </ScrollAnimation>
         </div>
