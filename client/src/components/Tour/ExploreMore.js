@@ -14,12 +14,12 @@ class ExploreMore extends Component {
         <ul className="p-tour-description-list explore-more-list">
           <li className="p-tour-description-l explore-more-l">
             <div className="p-tour-description-div explore-more-div">
-              <Link>
+              <a>
                 <img
                   className="explore-more-img"
                   src="/assets/img/images/tour_religion_2.jpg"
                 />
-              </Link>
+              </a>
               <h3 className="p-tour-description-title explore-more-div-title">
                 "HOW TO BUILD A COUNTRY" TOUR
               </h3>
@@ -27,7 +27,7 @@ class ExploreMore extends Component {
           </li>
           <li className="p-tour-description-l explore-more-l">
             <div className="p-tour-description-div explore-more-div">
-              <Link>
+              <a>
                 <img
                   className="explore-more-img"
                   src="/assets/img/images/tour_religion_3.jpg"
@@ -35,7 +35,7 @@ class ExploreMore extends Component {
                 <h3 className="p-tour-description-title explore-more-div-title">
                   "THE SINGAPORE FOOD" TOUR
                 </h3>
-              </Link>
+              </a>
             </div>
           </li>
         </ul>
