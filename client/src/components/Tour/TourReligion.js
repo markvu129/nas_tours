@@ -125,9 +125,6 @@ class TourReligion extends Component {
                     <p className="p-tour-description-p p-tour-annotation"></p>
                   </div>
                 </li>
-                <li className="temple-icon">
-                  <img src="/assets/img/images/temple.png"></img>
-                </li>
               </ul>
             </div>
           </ScrollAnimation>

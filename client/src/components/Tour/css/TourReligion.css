@@ -219,19 +219,6 @@ html {
   color: black;
 }
 
-.temple-icon {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -20%;
-  left: 41%;
-}
-
-.temple-icon img {
-  width: 150px;
-  height: 150px;
-}
-
 .tour-description-icon {
   width: 100px;
   height: 100px;
@@ -374,12 +361,27 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background: #0089e9;
+  background: white;
   list-style: none;
-  margin-top: 140px;
+  margin-top: 40px;
+  padding-top: 0px;
   position: relative;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+.temple-icon-mobile {
+  display: block !important;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px !important;
+  height: 150px !important;
+  margin-top: 40px;
+}
+
+.temple-icon-mobile img {
+  width: 150px !important;
+  height: 150px !important;
 }
 
 .p-tour-description-l {
@@ -415,7 +417,7 @@ html {
 .p-tour-annotation {
   color: #2c2c2c;
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-top: 0px;
 }
 
@@ -674,7 +676,6 @@ html {
   min-height: 1000px;
   text-align: center;
   background: white;
-  padding-bottom: 80px;
 }
 
 .tour-intro-title {
@@ -762,10 +763,6 @@ html {
   .tour-description {
     font-size: 0.8em;
     margin-top: 40px;
-  }
-
-  .temple-icon {
-    display: none;
   }
 
   .temple-icon-mobile {
@@ -938,28 +935,6 @@ html {
     padding-left: 0px;
   }
 
-  .tour-intro {
-    padding-bottom: 0px;
-  }
-
-  .temple-icon {
-    display: none;
-  }
-
-  .temple-icon-mobile {
-    display: block !important;
-    margin: 0 auto;
-    text-align: center;
-    width: 150px !important;
-    height: 150px !important;
-    margin-top: 40px;
-  }
-
-  .temple-icon-mobile img {
-    width: 150px !important;
-    height: 150px !important;
-  }
-
   .p-tour-description-list {
     margin-top: 40px;
     background: white;
@@ -969,11 +944,8 @@ html {
   .p-tour-description-l {
     flex-basis: 33%;
   }
-}
 
-/* Ipad pro */
-@media only screen and (min-width: 414px) and (max-width: 1199px) {
-  .temple-icon {
-    left: 41%;
+  .p-tour-annotation {
+    font-size: 0.7em;
   }
 }
