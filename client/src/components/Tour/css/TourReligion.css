@@ -216,7 +216,7 @@ html {
   font-size: 0.9em;
   margin-top: 40px;
   text-align: justify;
-  color: white;
+  color: black;
 }
 
 .temple-icon {
@@ -374,16 +374,22 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background: white;
+  background: #fbc91b;
   list-style: none;
   margin-top: 80px;
   position: relative;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .p-tour-description-l {
   flex-basis: 25%;
   margin: 0 auto;
   text-align: center;
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 20px 0px 20px 0px;
 }
 
 .p-tour-description-title {
@@ -393,7 +399,7 @@ html {
   border-radius: 5px;
   font-size: 1em;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 .p-tour-description-p {
@@ -663,12 +669,12 @@ html {
 .tour-intro {
   min-height: 1000px;
   text-align: center;
-  background: linear-gradient(to bottom, #b3b3b3 -200%, #2a2a2a 100%);
+  background: white;
   padding-bottom: 80px;
 }
 
 .tour-intro-title {
-  color: #fbc91b !important;
+  color: #0089e9 !important;
 }
 
 .intro-video-wrapper:hover + .video-control {
