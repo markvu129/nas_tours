@@ -4,6 +4,7 @@ import "./Testimonial";
 import Testimonial from "./Testimonial";
 import ImageSlider from "./Slider";
 import ScrollAnimation from "react-animate-on-scroll";
+import ExploreMore from "./ExploreMore";
 
 class TourReligion extends Component {
   constructor(props) {
@@ -230,6 +231,9 @@ class TourReligion extends Component {
           <div className="p-main-perks_block">
             <h1>What your edu-tainers say...</h1>
             <Testimonial />
+          </div>
+          <div className="tour-checkout-wrap">
+            <ExploreMore />
           </div>
         </ScrollAnimation>
       </div>
