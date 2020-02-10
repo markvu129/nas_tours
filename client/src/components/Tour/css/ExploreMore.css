@@ -87,6 +87,12 @@
   .explore-more-title {
     margin-bottom: 0px;
   }
+
+  .explore-more-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0px;
+  }
 }
 
 /* Iphone plus */
