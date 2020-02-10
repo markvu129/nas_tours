@@ -10,13 +10,18 @@
 
 .explore-more-div {
   border: 2px solid transparent;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .explore-more-l {
   flex-basis: 25%;
   height: 300px;
   padding: 0px 0px 0px 0px;
+  border-radius: 10px;
+}
+
+.explore-more-l img {
+  border-radius: 10px;
 }
 
 .explore-more-title {
