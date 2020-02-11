@@ -267,7 +267,7 @@ html {
   height: 530px;
   padding-top: 25px;
   position: relative;
-  background: url("/assets/img/images/background_desktop.jpg") no-repeat;
+  background: #0079e1;
   background-size: cover;
 }
 

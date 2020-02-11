@@ -17,7 +17,7 @@ class ExploreMore extends Component {
               <a>
                 <img
                   className="explore-more-img"
-                  src="/assets/img/images/tour_religion_2.jpg"
+                  src="/assets/img/images/build_nation_tour.jpg"
                 />
               </a>
               <h3 className="p-tour-description-title explore-more-div-title">
@@ -30,7 +30,7 @@ class ExploreMore extends Component {
               <a>
                 <img
                   className="explore-more-img"
-                  src="/assets/img/images/tour_religion_3.jpg"
+                  src="/assets/img/images/food_tour.jpg"
                 />
                 <h3 className="p-tour-description-title explore-more-div-title">
                   "THE SINGAPORE FOOD" TOUR
