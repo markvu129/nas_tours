@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar {
   font-size: 18px;
-  background: url("/assets/img/images/background_desktop.jpg") no-repeat;
+  background: #0079e1;
   background-size: cover;
   position: fixed;
   top: 0;
