@@ -137,7 +137,7 @@
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   .navbar {
-    background: #0089e9;
+    background: #0079e1;
   }
 
   .logo {
@@ -152,13 +152,13 @@
   }
 
   .main-nav {
-    background: #0089e9;
+    background: #0079e1;
     margin-top: 0px;
     width: 101%;
     position: absolute;
     top: 0;
     margin-left: -1px;
-    height: 100px;
+    height: 140px;
   }
 
   .navbar {

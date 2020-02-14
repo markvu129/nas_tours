@@ -6,6 +6,7 @@ import Tour from "./components/Tour/Tour";
 import history from "./modules/history.js";
 import Home from "./components/Main/Home";
 import About from "./components/About/About";
+import Term from "./components/Term/Term";
 
 render(
   <Router history={history}>
@@ -14,6 +15,7 @@ render(
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/tours/religion" component={Tour} />
+        <Route exact path="/faq" component={Term} />
       </Switch>
     </App>
   </Router>,

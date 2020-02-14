@@ -77,7 +77,7 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li data-v-cedeba38="">
-                  <a href="/#" className="c-footer-links" data-v-cedeba38="">
+                  <a href="/faq" className="c-footer-links" data-v-cedeba38="">
                     FAQs
                   </a>
                 </li>

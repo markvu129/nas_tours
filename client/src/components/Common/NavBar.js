@@ -93,6 +93,18 @@ class NavBar extends Component {
               Tours
             </a>
           </li>
+          <li>
+            <a
+              href="/faq"
+              className={
+                history.location.pathname === "/faq"
+                  ? "nav-links nav-links-active"
+                  : "nav-links"
+              }
+            >
+              FAQs
+            </a>
+          </li>
         </ul>
 
         <Helmet>
