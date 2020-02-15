@@ -7,6 +7,11 @@ import history from "./modules/history.js";
 import Home from "./components/Main/Home";
 import About from "./components/About/About";
 import Term from "./components/Term/Term";
+import ReactPixel from "react-facebook-pixel";
+
+ReactPixel.init("121961745898315", {}, { debug: true, autoConfig: false });
+ReactPixel.pageView();
+ReactPixel.fbq("track", "PageView");
 
 render(
   <Router history={history}>
