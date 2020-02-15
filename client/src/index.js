@@ -7,11 +7,16 @@ import history from "./modules/history.js";
 import Home from "./components/Main/Home";
 import About from "./components/About/About";
 import Term from "./components/Term/Term";
+
 import ReactPixel from "react-facebook-pixel";
 
-ReactPixel.init("121961745898315", {}, { debug: true, autoConfig: false });
-ReactPixel.pageView();
-ReactPixel.fbq("track", "PageView");
+const advancedMatching = { em: "ty@nasdaily.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/pixel-with-ads/conversion-tracking#advanced_match
+const options = {
+  autoConfig: true, // set pixel's autoConfig
+  debug: false // enable logs
+};
+ReactPixel.init("121961745898315", advancedMatching, options);
+ReactPixel.pageView(); // For tracking page view
 
 render(
   <Router history={history}>
