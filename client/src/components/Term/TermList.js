@@ -79,9 +79,9 @@ class TermList extends Component {
 
     const imgList = [
       "https://res.cloudinary.com/markvu129/image/upload/v1581693725/nastours/tour_guide_small_3_ljvf2c.png",
-      "https://res.cloudinary.com/markvu129/image/upload/v1581693725/nastours/tour_guide_small_tptobf.png",
+      "https://res.cloudinary.com/markvu129/image/upload/v1581744642/nastours/tour_guide_small_ezivqw.png",
       "https://res.cloudinary.com/markvu129/image/upload/v1581693725/nastours/tour_guide_small_3_ljvf2c.png",
-      "https://res.cloudinary.com/markvu129/image/upload/v1581693725/nastours/tour_guide_small_2_q7iyis.png"
+      "https://res.cloudinary.com/markvu129/image/upload/v1581744642/nastours/tour_guide_small_2_xg90le.png"
     ];
 
     let renderedQuestionList;

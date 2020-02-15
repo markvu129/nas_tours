@@ -50,13 +50,6 @@ class TourReligion extends Component {
               className="video-control video-control-first js-video-control playing"
               data-video="video1"
             ></a>
-            <div className="mouse" onClick={this.skipVideo}>
-              <div className="mouse-wheel">
-                <span className="wheel"></span>
-                <span className="arrow"></span>
-                <span className="arrow"></span>
-              </div>
-            </div>
           </div>
           <ScrollAnimation
             animateOnce
