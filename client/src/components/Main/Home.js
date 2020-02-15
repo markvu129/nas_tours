@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/Home.css";
+import ReactPixel from "react-facebook-pixel";
 
 class Home extends Component {
   constructor(props) {
@@ -11,7 +12,9 @@ class Home extends Component {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    ReactPixel.init("121961745898315");
+  }
 
   componentWillUnmount() {}
 
