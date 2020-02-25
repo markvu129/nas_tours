@@ -20,6 +20,10 @@
   border-radius: 10px;
 }
 
+.yellow-color {
+  color: #fbc91b;
+}
+
 .explore-more-l img {
   border-radius: 10px;
 }
@@ -68,17 +72,21 @@
 /* Iphone 6/7/8 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .explore-more-l {
-    flex-basis: 100%;
+    flex-basis: 85%;
+    height: 248px;
+    border-radius: 0px !important;
   }
 
   .explore-more-div-title {
-    font-size: 0.6em !important;
-    padding: 10px 10px;
+    font-size: 11px !important;
+    padding: 5px 10px;
+    height: 40px;
   }
 
   .explore-more-img {
     width: 100% !important;
     height: 200px !important;
+    border-radius: 0px !important;
   }
 
   .explore-more-l:first-child {
@@ -116,10 +124,20 @@
   .tour-checkout-wrap {
     height: 850px !important;
   }
+
+  .explore-more-l {
+    flex-basis: 80%;
+  }
+
+  .explore-more-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+  }
 }
 
 /* Smaller screen - ipad */
-@media only screen and (min-width: 414px) and (max-width: 1199px) {
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
   .tour-checkout-wrap {
     height: 900px;
     background: url("/assets/img/images/explore_mobile.jpg") no-repeat;

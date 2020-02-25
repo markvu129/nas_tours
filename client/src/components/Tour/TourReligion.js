@@ -222,7 +222,7 @@ class TourReligion extends Component {
             <h1>What your edu-tainers say...</h1>
             <Testimonial />
           </div>
-          <div className="tour-checkout-wrap">
+          <div className="tour-checkout-wrap tour-checkout-explore-more">
             <ExploreMore />
           </div>
         </ScrollAnimation>

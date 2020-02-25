@@ -260,7 +260,7 @@ body {
   }
 
   .welcome-area {
-    height: 600px !important;
+    height: 550px !important;
   }
 
   .p-index-button_block .p-index-button {
@@ -313,17 +313,17 @@ body {
 }
 
 /* Larger screen */
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
   .main-video {
-    width: 1600px;
+    width: 1800px;
     object-fit: fill !important;
   }
 }
 
-/* Very large screen */
-@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+/* Larger screen */
+@media only screen and (min-width: 1799px) and (max-width: 2500px) {
   .main-video {
-    width: 1800px;
+    width: 2200px;
     object-fit: fill !important;
   }
 }

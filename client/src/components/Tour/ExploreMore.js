@@ -10,7 +10,9 @@ class ExploreMore extends Component {
   render() {
     return (
       <div className="p-tour-description explore-more-section">
-        <h1 className="explore-more-title">More exciting tours coming soon </h1>
+        <h1 className="explore-more-title">
+          More exciting <span className="yellow-color">tours</span> coming soon{" "}
+        </h1>
         <ul className="p-tour-description-list explore-more-list">
           <li className="p-tour-description-l explore-more-l">
             <div className="p-tour-description-div explore-more-div">

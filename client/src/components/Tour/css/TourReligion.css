@@ -785,6 +785,10 @@ html {
     display: none;
   }
 
+  .tour-description {
+    text-align: justify;
+  }
+
   .p-tour-description-list {
     padding-top: 40px;
     margin-top: 20px;
@@ -814,6 +818,8 @@ html {
 
   .p-tour-timeline-icon-mobile {
     border-radius: 100%;
+    box-shadow: 0 0 0 5px #0089e9;
+    color: #0089e9;
   }
 
   .p-tour-timeline-icon-mobile:hover {
@@ -923,6 +929,10 @@ html {
   .p-tour-timeline-line {
     width: 280px !important;
   }
+
+  .tour-checkout-explore-more {
+    height: 780px !important;
+  }
 }
 
 /* Iphone plus */
@@ -930,10 +940,14 @@ html {
   .testimonial-img {
     padding-top: 150px !important;
   }
+
+  .p-tour-timeline-block h1 {
+    margin-top: 40px;
+  }
 }
 
 /* Smaller screen - ipad */
-@media only screen and (min-width: 414px) and (max-width: 1199px) {
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
   .l-default-logo {
     padding-left: 0px;
   }
