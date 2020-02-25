@@ -312,10 +312,18 @@ body {
   }
 }
 
-/* Very large screen */
-@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+/* Larger screen */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .main-video {
-    width: 1500px;
+    width: 1600px;
+    object-fit: fill !important;
+  }
+}
+
+/* Very large screen */
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  .main-video {
+    width: 1800px;
     object-fit: fill !important;
   }
 }
