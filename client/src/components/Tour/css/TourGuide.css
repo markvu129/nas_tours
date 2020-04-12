@@ -1,0 +1,138 @@
+.tour-guide-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.tour-guide-title {
+  font-family: Ubuntu;
+  font-size: 56px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  color: #070504;
+  padding-left: 60px;
+}
+
+.tour-guide-info {
+  display: flex;
+}
+
+.tour-guide-info-list {
+  flex-basis: 45%;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.tour-guide-info-img {
+  width: 100%;
+  height: 500px;
+}
+
+.tour-guide-icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tour-guide-icon {
+  flex-basis: 50%;
+  height: 125px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tour-guide-icon-desc {
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #070504;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.tour-guide-icon-img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.tour-info-desc {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #070504;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.tour-guide-destination-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.tour-guide-destination-section h1 {
+  padding-left: 0px;
+}
+
+.tour-guide-destination-section ul {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #070504;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.tour-info-destination-list {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.tour-info-destination-list li {
+  flex-basis: 50%;
+}
+
+.tour-guide-cta {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tour-guide-cta-click {
+  background: #fbc91b;
+  text-transform: uppercase;
+  color: #070504;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.tour-guide-quick-peek {
+  flex-basis: 20%;
+  padding-left: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tour-guide-quick-peek-img {
+  height: 200px;
+}

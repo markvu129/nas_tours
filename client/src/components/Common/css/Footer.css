@@ -1,6 +1,9 @@
 .c-footer[data-v-cedeba38] {
-  height: 270px;
-  background: linear-gradient(to bottom, #b3b3b3 -200%, #2a2a2a 100%);
+  padding-bottom: 80px;
+  background: #414141;
+  font-family: "Ubuntu";
+  bottom: 0;
+  width: 100%;
 }
 
 .c-footer-wrap[data-v-cedeba38] {
@@ -151,29 +154,12 @@ ul[data-v-cedeba38] {
   height: 40px;
 }
 
-.footer-icon {
-  color: #fbc91b;
-  font-size: 24px;
-  margin-right: 10px;
-}
-
 .terms-and-conditions-footer {
   flex-basis: 20% !important;
 }
 
-/* Large screen */
-@media only screen and (min-width: 1200px) and (max-width: 1799px) {
-  .footer-icon-list {
-    margin-top: -20px;
-  }
-}
-
 /* Smaller screen - ipad */
 @media only screen and (min-width: 415px) and (max-width: 1023px) {
-  .c-footer[data-v-cedeba38] {
-    height: 450px;
-  }
-
   .c-footer-contact_link {
     width: 300px;
   }
@@ -191,19 +177,8 @@ ul[data-v-cedeba38] {
   }
 }
 
-/* Smaller screen - ipad pro */
-@media only screen and (min-width: 1023px) and (max-width: 1200px) {
-  .c-footer[data-v-cedeba38] {
-    height: 700px;
-  }
-}
-
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
-  .c-footer[data-v-cedeba38] {
-    height: 600px;
-  }
-
   .c-footer-wrap[data-v-cedeba38] {
     padding: 0px 0px !important;
   }
@@ -238,27 +213,7 @@ ul[data-v-cedeba38] {
     text-decoration: underline;
   }
 
-  .footer-icon {
-    padding-left: 0px;
-    text-align: center !important;
-    margin: 0 auto !important;
-    padding-right: 10px;
-  }
-
-  .footer-icon-list {
-    padding-left: 0px;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: flex-start !important;
-  }
-
   .c-footer-tour-description {
     margin-top: 10px;
-  }
-}
-
-@media only screen and (min-width: 415px) and (max-width: 570px) {
-  .c-footer[data-v-cedeba38] {
-    height: 650px;
   }
 }

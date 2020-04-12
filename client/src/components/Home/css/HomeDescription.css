@@ -1,0 +1,95 @@
+.home-description {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: rgba(255, 204, 0, 0.3);
+}
+
+.white {
+  background: white;
+}
+
+.home-description-title {
+  font-family: Ubuntu;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: -1px;
+  color: #070504;
+  width: 1290px;
+  padding-left: 80px;
+}
+
+.home-description-detail {
+  width: 598px;
+  height: 72px;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #070504;
+  padding-left: 80px;
+}
+
+.date-filter {
+  padding-left: 80px;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block !important;
+  float: left;
+}
+
+.react-datepicker__input-container input {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+}
+
+.home-description-button {
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #070504;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.text-align-right {
+  text-align: right;
+  padding-left: 0px;
+}
+
+.home-description-price-title {
+  font-family: Ubuntu;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: -1px;
+  color: #070504;
+  padding-right: 80px;
+}
+
+.home-description-price-detail {
+  height: 72px;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #070504;
+  padding-right: 80px;
+}

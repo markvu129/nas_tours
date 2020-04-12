@@ -1,0 +1,47 @@
+.tour-benefits-section {
+  background: white;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.tour-benefits-title {
+  font-family: Ubuntu;
+  font-size: 56px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: -1px;
+  color: #070504;
+}
+
+.tour-benefits-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tour-benefits {
+  flex-basis: 33%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.tour-benefits-icon {
+  width: 175px;
+  height: 150px;
+}
+
+.tour-benefits-desc {
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #070504;
+  padding-top: 20px;
+}

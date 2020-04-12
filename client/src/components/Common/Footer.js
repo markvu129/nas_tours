@@ -43,16 +43,14 @@ class Footer extends Component {
               <h4 data-v-cedeba38="">Contact us</h4>
               <div data-v-cedeba38="" className="c-footer-contact_link-div">
                 <span className="c-footer-contact_link" data-v-cedeba38="">
-                  <i className="fa fa-phone fa-5x footer-icon"></i>
                   <a href="tel:+6591517567" data-v-cedeba38="">
                     +65 9151 7567
                   </a>
                 </span>
                 <br />
                 <span className="c-footer-contact_link" data-v-cedeba38="">
-                  <a href="mailto:info@nastours.sg" data-v-cedeba38="">
-                    <i className="fa fa-envelope fa-5x footer-icon"></i>
-                    info@nastours.sg
+                  <a href="tel:+6591517567" data-v-cedeba38="">
+                    info@tours.sg
                   </a>
                 </span>
               </div>
@@ -79,48 +77,6 @@ class Footer extends Component {
                 <li data-v-cedeba38="">
                   <a href="/faq" className="c-footer-links" data-v-cedeba38="">
                     FAQs
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="c-footer-info-block footer-icon" data-v-cedeba38="">
-              <ul data-v-cedeba38="" className="footer-icon-list">
-                <li>
-                  <a
-                    href="https://www.tripadvisor.com.sg/Attraction_Review-g294265-d19699980-Reviews-Nas_Tours-Singapore.html"
-                    className="c-footer-social c-footer-social-tripadviser"
-                    target="_blank"
-                  >
-                    <img
-                      className="footer-img"
-                      src="https://svgshare.com/i/HA0.svg"
-                    ></img>
-                  </a>
-                </li>
-                <li data-v-cedeba38="">
-                  <a
-                    href="https://www.facebook.com/Nas-Tours-104146571094831/"
-                    className="c-footer-social c-footer-social-facebook"
-                    data-v-cedeba38=""
-                    target="_blank"
-                  >
-                    <img
-                      className="footer-img"
-                      src="https://svgshare.com/i/HA1.svg"
-                    ></img>
-                  </a>
-                </li>
-                <li data-v-cedeba38="">
-                  <a
-                    href="https://www.instagram.com/nasdaily"
-                    className="c-footer-social c-footer-social-instagram"
-                    data-v-cedeba38=""
-                    target="_blank"
-                  >
-                    <img
-                      className="footer-img"
-                      src="https://svgshare.com/i/HA2.svg"
-                    ></img>
                   </a>
                 </li>
               </ul>

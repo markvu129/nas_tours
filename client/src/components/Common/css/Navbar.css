@@ -1,13 +1,12 @@
 /* Navbar */
 .navbar {
-  font-size: 18px;
-  background: #0079e1;
+  background: #ffffff;
   background-size: cover;
-  position: fixed;
   top: 0;
-  height: 70px;
   z-index: 1000;
   width: 100%;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .main-nav {
@@ -19,10 +18,26 @@
   height: 30px;
 }
 
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
-  color: white;
+  color: #000000;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signin-btn {
+  font-size: 16px;
+  font-family: Ubuntu;
+  padding: 10px 15px 10px 15px;
+  background: #fbc91b;
+  border: 1px solid transparent;
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+.signin-item {
+  padding-top: 0px !important;
 }
 
 .nav-links:hover {
@@ -30,10 +45,11 @@
   padding-bottom: 5px;
   border-bottom: 2px #fbc91b solid;
   cursor: pointer;
+  color: #000000;
 }
 
 .nav-links-active {
-  color: white;
+  color: #fbc91b;
   text-decoration: none;
   padding-bottom: 5px;
   border-bottom: 2px #fbc91b solid;
@@ -73,8 +89,6 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
     align-items: center;
   }
 
@@ -101,34 +115,10 @@
   .navbar-toggle {
     display: none;
   }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
-  }
-}
-
-/* Check availibility button */
-.bokunButton {
-  background: #fbc91b;
-  color: #000;
-  font-weight: 1000 !important;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  padding: 10px 10px;
-  display: inline-block;
-  width: 320px;
-  text-align: center;
 }
 
 /* Large screen */
 @media only screen and (min-width: 1199px) {
-  .bokunButton {
-    position: absolute;
-    left: 39%;
-  }
-
   .main-nav {
     margin-top: 10px;
   }
@@ -137,22 +127,15 @@
 /* Iphone 6/7/8 */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   .navbar {
-    background: #0079e1;
+    background: #ffffff;
   }
 
   .logo {
     width: 100px;
   }
 
-  .bokunButton {
-    font-size: 12px !important;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-left: 0px;
-  }
-
   .main-nav {
-    background: #0079e1;
+    background: #ffffff;
     margin-top: 0px;
     width: 101%;
     position: absolute;
@@ -160,12 +143,6 @@
     margin-left: -1px;
     height: 140px;
   }
-
-  .navbar {
-    padding: 0px 0px 10px 0px;
-    height: 110px;
-  }
-
   .nav-links {
     font-weight: bold;
   }
@@ -227,13 +204,6 @@
   .close:after {
     transform: rotate(-45deg);
   }
-  .bokunButton {
-    display: block;
-    float: initial;
-    text-align: center;
-    margin: 0 auto;
-    width: 90%;
-  }
 }
 
 /* Iphone plus */
@@ -249,10 +219,6 @@
     padding-left: 0px;
   }
 
-  .bokunButton {
-    margin-left: 35px;
-  }
-
   .main-nav li {
     padding-top: 5px;
   }
@@ -260,16 +226,8 @@
 
 /* Ipad pro */
 @media only screen and (min-width: 1024px) and (max-width: 1100px) {
-  .bokunButton {
-    margin-left: 0px;
-    width: 300px;
-  }
 }
 
 /* Super large screen */
 @media only screen and (min-width: 1799px) {
-  .bokunButton {
-    width: 500px;
-    left: 37%;
-  }
 }

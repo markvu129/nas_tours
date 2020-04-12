@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./css/Navbar.css";
-import { Helmet } from "react-helmet";
 import history from "../../modules/history";
 
 class NavBar extends Component {
@@ -19,10 +18,6 @@ class NavBar extends Component {
     });
   }
 
-  componentDidMount() {
-    this.forceUpdate();
-  }
-
   render() {
     return (
       <nav
@@ -34,23 +29,11 @@ class NavBar extends Component {
       >
         <a href="/" className="logo">
           <img
-            alt="Nastours. The best offline experience in the world"
-            src="/assets/img/images/logo-nastours.svg"
+            alt="Nastours - a unique travel car with a way"
+            src="/assets/img/images/nas_tours_logo_main.svg"
             className="l-tour-logo logo-navbar"
           />
         </a>
-        {history.location.pathname !== "/about" ? (
-          <div
-            className="bokunButton"
-            disabled
-            id="bokun_676c790a_eeab_4d3a_8c70_15101027246c"
-            data-src="https://widgets.bokun.io/online-sales/a186cc43-6cac-4331-b827-83773d45435d/experience/249563?partialView=1"
-          >
-            Book now
-          </div>
-        ) : (
-          <div></div>
-        )}
 
         <label
           className="navbar-toggle"
@@ -69,23 +52,11 @@ class NavBar extends Component {
               Home
             </a>
           </li>
-          {/*<li>*/}
-          {/*  <a*/}
-          {/*    href="/about"*/}
-          {/*    className={*/}
-          {/*      history.location.pathname === "/about"*/}
-          {/*        ? "nav-links nav-links-active"*/}
-          {/*        : "nav-links"*/}
-          {/*    }*/}
-          {/*  >*/}
-          {/*    About*/}
-          {/*  </a>*/}
-          {/*</li>*/}
           <li>
             <a
-              href="/tours/religion"
+              href="/tours"
               className={
-                history.location.pathname === "/tours/religion"
+                history.location.pathname === "/tours"
                   ? "nav-links nav-links-active"
                   : "nav-links"
               }
@@ -105,15 +76,10 @@ class NavBar extends Component {
               FAQs
             </a>
           </li>
+          <li className="signin-item">
+            <button className="signin-btn">Sign in</button>
+          </li>
         </ul>
-
-        <Helmet>
-          <script
-            type="text/javascript"
-            src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=a186cc43-6cac-4331-b827-83773d45435d"
-            sync
-          ></script>
-        </Helmet>
       </nav>
     );
   }

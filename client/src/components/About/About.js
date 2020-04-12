@@ -4,7 +4,7 @@ import "./css/About.css";
 import NavBar from "../Common/NavBar";
 import ScrollAnimation from "react-animate-on-scroll";
 import Footer from "../Common/Footer";
-import Testimonial from "../Tour/Testimonial";
+import Testimonial from "../Home/Testimonial";
 
 class About extends Component {
   constructor(props) {
