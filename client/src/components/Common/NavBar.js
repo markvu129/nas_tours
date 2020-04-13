@@ -77,7 +77,9 @@ class NavBar extends Component {
             </a>
           </li>
           <li className="signin-item">
-            <button className="signin-btn">Sign in</button>
+            <a href="/login">
+              <button className="signin-btn">Sign in</button>
+            </a>
           </li>
         </ul>
       </nav>

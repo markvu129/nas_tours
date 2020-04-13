@@ -36,6 +36,10 @@
   font-weight: 500;
 }
 
+.signin-btn:hover {
+  cursor: pointer;
+}
+
 .signin-item {
   padding-top: 0px !important;
 }
